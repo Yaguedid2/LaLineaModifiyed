@@ -37,7 +37,7 @@ public class SpeakManager : MonoBehaviour
             for (int i = 0; i < words.Length; i++)
             {
                 Vector2 headPosition = new Vector2(player.GetComponent<Collider>().bounds.size.x + player.transform.position.x, player.transform.position.y + player.GetComponent<Collider>().bounds.size.y);
-                Debug.Log(headPosition);
+                //Debug.Log(headPosition);
                 float offsetX = Random.RandomRange(3f, 4f);
                 float offsetY = Random.RandomRange(0f, 3f);
                 TextMeshPro t = Instantiate(text);

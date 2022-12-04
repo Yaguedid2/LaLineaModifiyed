@@ -20,7 +20,7 @@ public class RenderCamera : MonoBehaviour
 
     public  void CamCapture()
     {
-        Debug.Log(DrawingToJson.instance.imageStrokes.Count);
+
        
         Camera Cam = GetComponent<Camera>();
 
@@ -64,7 +64,7 @@ public class RenderCamera : MonoBehaviour
 
 
         FecthServer.instance.call();
-        //LineManager.instance.drawLine();
+        LineManager.instance.drawLine();
 
     }
     float xmin, xmax, ymin, ymax;
@@ -86,7 +86,7 @@ public class RenderCamera : MonoBehaviour
             r = r.Trim();
             r += "[";
             r = r.Trim();
-            Debug.Log(stroke.Count);
+
             //float i = stroke[index][0].AsQueryable().Min();
             listOmins.Add(stroke[0].Min());
             //float i2 = stroke[index].AsQueryable().Max();

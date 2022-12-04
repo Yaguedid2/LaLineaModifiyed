@@ -31,45 +31,94 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    float timeInSec = 0;
     void Update()
     {
-       
+        timeInSec += Time.deltaTime;
         move();
        
     }
+    int indexOfLine = 1;
+    int indexOfpointOnDrawing = 0;
+    public float diff;
   
     public void move()
     {
-        if (walkAnimationStarted)
+        if (walkAnimationStarted )
         {
-            
-           if(transform.position.x>PositionToStopWalking.x)
+            if(!ObjectManager.instance.drawLine)
             {
-                transform.position -= new Vector3(stepVelocity, 0, 0);
-            }
-            else
+                    indexOfpointOnDrawing = 0;
+                
+                    if (transform.position.x > LineManager.instance.line.GetPosition(indexOfLine).x)
+                    {
+                        transform.position = Vector3.MoveTowards(transform.position, LineManager.instance.line.GetPosition(indexOfLine), stepVelocity);
+
+                        transform.LookAt(LineManager.instance.line.GetPosition(indexOfLine));
+                    }
+                    else
+                    {
+                        if(indexOfLine< LineManager.instance.line.positionCount-1)
+                        indexOfLine++;
+                        else
+                        {
+                           
+                            //EndOfTheLIne
+                            animator.Play("waitForLine");
+                            ObjectManager.instance.drawLine = false;
+                           
+                            ObjectManager.instance.drawingArea.SetActive(true);
+                            ObjectManager.instance.okButton.SetActive(true);
+                            ObjectManager.instance.clearButton.SetActive(true);
+                            ObjectManager.instance.drawLineButton.SetActive(true);
+                        }
+                        LineManager.instance.lineCurviness = Mathf.Abs(Mathf.Abs(LineManager.instance.line.GetPosition(indexOfLine - 1).y) - Mathf.Abs(LineManager.instance.line.GetPosition(indexOfLine).y)) + 1;
+
+                        timeInSec = 0;
+                    }
+               
+            }else
             {
-                //EndOfTheLIne
-                animator.Play("waitForLine");
-                ObjectManager.instance.drawingArea.transform.position = new Vector3(transform.position.x-7.5f, 0, 0);
-                ObjectManager.instance.drawingArea.SetActive(true);
-                ObjectManager.instance.okButton.SetActive(true);
-                ObjectManager.instance.clearButton.SetActive(true);
-
-
+                Debug.Log(transform.position);
+                    transform.position = Vector3.MoveTowards(transform.position, ObjectManager.instance.listOfImagePointsToWalkOn[indexOfpointOnDrawing].transform.position, stepVelocity);
+                    transform.LookAt(ObjectManager.instance.listOfImagePointsToWalkOn[indexOfpointOnDrawing].transform.position);
+                
+                    
             }
+
+               
+         }
+           
          
            
-        }
+        
            
 
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "imagePoint")
+        {
+            if (indexOfpointOnDrawing < ObjectManager.instance.listOfImagePointsToWalkOn.Count - 1)
+                indexOfpointOnDrawing++;
+            else
+                ObjectManager.instance.drawLine = false;
+
+
+        }
+        
+    }
+
+    
+  
+
     public void changeLinePosition(bool firstTime)
     {
-        float lineEnd = LineManager.instance.line.gameObject.transform.position.x + LineManager.instance.line.GetPosition(1).x;
+        indexOfLine = 0;
+        float lineEnd = LineManager.instance.line.gameObject.transform.position.x + LineManager.instance.line.GetPosition(LineManager.instance.line.positionCount-1).x;
+
         EndOfLinePosition = new Vector3(lineEnd, transform.position.y, transform.position.z);
-        PositionToStopWalking = new Vector3(lineEnd + transform.localScale.x + 2, transform.position.y, transform.position.z);
+        PositionToStopWalking = EndOfLinePosition;
         if(!firstTime)
         animator.Play("walk");
     }

@@ -18,6 +18,7 @@ public class DrawMesh : MonoBehaviour {
     float minx=0, max=0,miny=0,maxy=0;
     public List<float> strokePixelsX = new List<float>();
     public List<float> strokePixelsY = new List<float>();
+  
     public List<List<float>> strokePixelsXY =new List<List<float>>();
 
     private void Awake() {
@@ -31,18 +32,20 @@ public class DrawMesh : MonoBehaviour {
         drawArea = ObjectManager.instance.realDrawingArea;
     }
     bool firstClick = false;
-   /// <summary>
-   /// 
-   /// </summary>
+    /// <summary>
+    /// 
+    /// </summary>
 
-    
+
 
     /// <summary>
     /// 
     /// </summary>
+    ///
+    int indexOfPoint = 0;
     private void Update() {
 
-        Debug.Log(Mathf.Abs(Mathf.Floor(getPoistionOnDrawArea().x * 55.5f)) + "  "+ Mathf.Abs(Mathf.Floor(getPoistionOnDrawArea().y * 55.5f)));
+        //Debug.Log(Mathf.Abs(Mathf.Floor(getPoistionOnDrawArea().x * 55.5f)) + "  "+ Mathf.Abs(Mathf.Floor(getPoistionOnDrawArea().y * 55.5f)));
         checkIfInDrawArea();
         if (strokeCreated)
             return;
@@ -65,8 +68,8 @@ public class DrawMesh : MonoBehaviour {
             vertices[1] = getMouseWorlPosition();
             vertices[2] = getMouseWorlPosition();
             vertices[3] = getMouseWorlPosition();
-            minx = max = getMouseWorlPosition().x;
-            miny = maxy = getMouseWorlPosition().y;
+            minx = max = ObjectManager.instance.realDrawingArea.transform.InverseTransformPoint(getMouseWorlPosition()).x;
+            miny = maxy = ObjectManager.instance.realDrawingArea.transform.InverseTransformPoint(getMouseWorlPosition()).y;
 
             uv[0] = Vector2.zero;
             uv[1] = Vector2.zero;
@@ -108,14 +111,24 @@ public class DrawMesh : MonoBehaviour {
                    strokePixelsX.Add(Mathf.Abs(Mathf.Floor(getPoistionOnDrawArea().x * 55.5f)));
                    
                    strokePixelsY.Add(Mathf.Abs(Mathf.Floor(getPoistionOnDrawArea().y * 55.5f)));
+                   
                     //forImagePoint
                     Vector2 point = new Vector2();
                     point = ObjectManager.instance.realDrawingArea.transform.InverseTransformPoint(getMouseWorlPosition());
-                 
+                    indexOfPoint++;
+                   
+                  
+
                     if (point.x < minx)
+                    {
                         minx = point.x;
+                       
+                    }
                     if (point.x >= max)
+                    {
                         max = point.x;
+                        DrawingToJson.instance.indexOfMaxX = indexOfPoint;
+                    }
 
                   
                     if (point.y < miny)
@@ -123,6 +136,7 @@ public class DrawMesh : MonoBehaviour {
                     if (point.y >= maxy)
                         maxy = point.y;
                     DrawingToJson.instance.imagePoints.Add(point);
+                   
                     // Debug.Log(getPoistionOnDrawArea());
 
                     mesh.vertices.CopyTo(vertices, 0);
