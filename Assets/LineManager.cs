@@ -5,11 +5,14 @@ using UnityEngine;
 public class LineManager : MonoBehaviour
 {
     public LineRenderer line;
+    public GameObject lineObject;
     public static LineManager instance;
     public float lineCurviness = 1;
     public int edgeOfline;
     public Vector3 start,end;
-    float distanceBetweenLinePoints = 10; 
+    float distanceBetweenLinePoints = 10;
+    public List<Vector3> listOfLineEnds = new List<Vector3>();
+   
     private void Awake()
     {
         instance = this;
@@ -19,35 +22,60 @@ public class LineManager : MonoBehaviour
      void Start()
     {
         edgeOfline = 2;
+        drawLine(true);
     }
     bool firstTime = true;
-    public void drawLine()
+    public void drawLine(bool firstTime)
     {
-        firstTime = false;
+        
         if (firstTime)
         {
-            line.SetPosition(1, new Vector3(line.GetPosition(0).x - 5, line.GetPosition(0).y, line.GetPosition(0).z));
+           GameObject l= Instantiate(lineObject);
+            
+            //  Mesh mesh = new Mesh();
+            // l.GetComponent<LineRenderer>().BakeMesh(mesh);
+            //l.GetComponent<MeshCollider>().sharedMesh = mesh;
+            //l.GetComponent<MeshCollider>().convex = true;
             edgeOfline = 1;
         }
         else
         {
             edgeOfline = line.positionCount - 1;
             LineRenderer oldLine = line;
-            line = Instantiate(line);
+            GameObject l = Instantiate(lineObject);
+            start = l.transform.InverseTransformPoint(start);
+            l.GetComponent<LineRenderer>().SetPosition(0, new Vector3(start.x, -4.92f,start.z));
+            float y = Random.Range(-10f, 10f);
+            l.GetComponent<LineRenderer>().SetPosition(1, start-new Vector3(10, 0, y));
+            l.GetComponent<LineRenderer>().SetPosition(2, start - new Vector3(20, 0, y));
+            l.GetComponent<LineRenderer>().SetPosition(3, start - new Vector3(30, 0, y));
+
+           
+            line = l.GetComponent<LineRenderer>();
+           
             //Destroy(oldLine, 7);
 
             //line.SetPosition(0, new Vector3(line.GetPosition(line.positionCount - 1).x + 5, line.GetPosition(line.positionCount - 1).y, line.GetPosition(line.positionCount - 1).z));
+
+
+            /*
             line.SetPosition(0, new Vector3(start.x,start.y, line.GetPosition(0).z));
             line.SetPosition(1, new Vector3(line.GetPosition(0).x - 5, line.GetPosition(0).y, line.GetPosition(0).z));
-        }
         
-        line.SetPosition(2, new Vector3(line.GetPosition(1).x, line.GetPosition(1).y, line.GetPosition(1).z));
-      line.SetPosition(3, new Vector3(line.GetPosition(2).x-distanceBetweenLinePoints, Random.Range(line.GetPosition(1).y+0.5f, 10), line.GetPosition(1).z));
-      line.SetPosition(4, new Vector3(line.GetPosition(3).x, line.GetPosition(3).y, line.GetPosition(1).z));
-      line.SetPosition(5, new Vector3(line.GetPosition(4).x - distanceBetweenLinePoints, Random.Range(line.GetPosition(1).y + 0.5f, 10), line.GetPosition(1).z));
-        line.SetPosition(6, new Vector3(line.GetPosition(5).x, line.GetPosition(5).y, line.GetPosition(1).z));
-        line.SetPosition(7, new Vector3(line.GetPosition(6).x-distanceBetweenLinePoints, line.GetPosition(1).y, line.GetPosition(1).z));
+        
+         line.SetPosition(2, new Vector3(line.GetPosition(1).x, line.GetPosition(1).y, line.GetPosition(1).z));
+         line.SetPosition(3, new Vector3(line.GetPosition(2).x-distanceBetweenLinePoints, Random.Range(line.GetPosition(1).y+0.5f, 10), line.GetPosition(1).z));
+            */
 
-        PlayerController.instance.changeLinePosition(false);
+            //Mesh mesh = new Mesh();
+
+            //line.BakeMesh(mesh);
+            //line.gameObject.GetComponent<MeshCollider>().sharedMesh = mesh;
+
+
+            //line.gameObject.GetComponent<MeshCollider>().sharedMesh = mesh;
+            //line.gameObject.GetComponent<MeshCollider>().convex = true;
+            PlayerController.instance.changeLinePosition(false);
+        }
     }
 }

@@ -8,12 +8,16 @@ public class PlayerController : MonoBehaviour
     
     public bool walkAnimationStarted=false;
     public float stepVelocity = 0.3f;
-  
+    public GameObject globalRef;
     Vector3 PositionToStopWalking;
     Vector3 EndOfLinePosition;
     public bool addline=false;
     [HideInInspector]
     public static PlayerController instance;
+    public GameObject whereToSee;
+    public bool fall = false;
+    BoxCollider playerCollider, fallingFromLineCollider;
+    public LayerMask layerMask;
     private void Awake()
     {
         instance = this;
@@ -23,25 +27,60 @@ public class PlayerController : MonoBehaviour
     {
         animator = GetComponent < Animator>();
         changeLinePosition(true);
-        SpeakManager.instance.Speak("Baby, calm down, calm down");
-        SpeakManager.instance.Speak("Girl, this your body e put my heart for lockdown");
-        SpeakManager.instance.Speak("For lockdown, oh, lockdown");
-        SpeakManager.instance.Speak("Girl, you sweet like Fanta, Fanta");
-        SpeakManager.instance.Speak("If I tell you say I love you no dey form yanga, oh, yanga");
+        walkAnimationStarted = false;
 
+        SpeakManager.instance.Speak("zaml");
+        playerCollider = GetComponents<BoxCollider>()[1];
+        fallingFromLineCollider = GetComponents<BoxCollider>()[0];
     }
 
     float timeInSec = 0;
     void Update()
     {
+        float rot=calcRotation();
+        if (rot < -66 || rot>66)       
+            fall = true;
+        if(fall)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, -100, 0), 0.1f);
+            playerCollider.enabled = false;
+            fallingFromLineCollider.enabled = true;
+       
+            return;
+        }
+           
+       
+           
         timeInSec += Time.deltaTime;
         move();
-       
+        //controleAnimation();
+        
+
     }
     int indexOfLine = 1;
     int indexOfpointOnDrawing = 0;
     public float diff;
   
+
+
+    void controleAnimation()
+    {
+       
+    }
+
+
+    float calcRotation()
+    {
+        if (transform.eulerAngles.x > 180)
+        {
+            return transform.eulerAngles.x - 360;
+        }
+        else
+        {
+          return transform.eulerAngles.x;
+        }
+    }
+
     public void move()
     {
         if (walkAnimationStarted )
@@ -52,9 +91,12 @@ public class PlayerController : MonoBehaviour
                 
                     if (transform.position.x > LineManager.instance.line.GetPosition(indexOfLine).x)
                     {
-                        transform.position = Vector3.MoveTowards(transform.position, LineManager.instance.line.GetPosition(indexOfLine), stepVelocity);
-
-                        transform.LookAt(LineManager.instance.line.GetPosition(indexOfLine));
+                    Vector3 targetposition = LineManager.instance.line.GetPosition(indexOfLine);
+                   
+                    Debug.Log(targetposition);
+                    var targetRotation = Quaternion.LookRotation(LineManager.instance.line.GetPosition(indexOfLine) - transform.position);
+                    transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 5 * Time.deltaTime);
+                    transform.position = Vector3.MoveTowards(transform.position, targetposition, stepVelocity);
                     }
                     else
                     {
@@ -62,15 +104,11 @@ public class PlayerController : MonoBehaviour
                         indexOfLine++;
                         else
                         {
-                           
+                        Debug.Log(indexOfLine);
                             //EndOfTheLIne
                             animator.Play("waitForLine");
-                            ObjectManager.instance.drawLine = false;
-                           
-                            ObjectManager.instance.drawingArea.SetActive(true);
-                            ObjectManager.instance.okButton.SetActive(true);
-                            ObjectManager.instance.clearButton.SetActive(true);
-                            ObjectManager.instance.drawLineButton.SetActive(true);
+                        
+                        showDrawingArea();
                         }
                         LineManager.instance.lineCurviness = Mathf.Abs(Mathf.Abs(LineManager.instance.line.GetPosition(indexOfLine - 1).y) - Mathf.Abs(LineManager.instance.line.GetPosition(indexOfLine).y)) + 1;
 
@@ -79,11 +117,17 @@ public class PlayerController : MonoBehaviour
                
             }else
             {
-                Debug.Log(transform.position);
-                    transform.position = Vector3.MoveTowards(transform.position, ObjectManager.instance.listOfImagePointsToWalkOn[indexOfpointOnDrawing].transform.position, stepVelocity);
-                    transform.LookAt(ObjectManager.instance.listOfImagePointsToWalkOn[indexOfpointOnDrawing].transform.position);
-                
-                    
+                Vector3 actualposition = transform.position;
+                Vector3 targetposition =ObjectManager.instance.listOfImagePointsToWalkOn[indexOfpointOnDrawing].transform.position;
+                Debug.Log(targetposition);
+                transform.position = Vector3.MoveTowards(actualposition, targetposition, stepVelocity);
+
+                var targetRotation = Quaternion.LookRotation(ObjectManager.instance.listOfImagePointsToWalkOn[indexOfpointOnDrawing].transform.position - transform.position);
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 5 * Time.deltaTime);
+
+               
+
+
             }
 
                
@@ -95,6 +139,15 @@ public class PlayerController : MonoBehaviour
            
 
     }
+    private static float WrapAngle(float angle)
+    {
+        angle %= 360;
+        if (angle > 180)
+            return angle - 360;
+
+        return angle;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "imagePoint")
@@ -106,7 +159,8 @@ public class PlayerController : MonoBehaviour
 
 
         }
-        
+       
+
     }
 
     
@@ -121,6 +175,33 @@ public class PlayerController : MonoBehaviour
         PositionToStopWalking = EndOfLinePosition;
         if(!firstTime)
         animator.Play("walk");
+        walkAnimationStarted = true;
     }
-    
+    void showDrawingArea()
+    {
+        ObjectManager.instance.drawLine = false;
+        ObjectManager.instance.drawingArea.SetActive(true);
+        ObjectManager.instance.okButton.SetActive(true);
+        ObjectManager.instance.clearButton.SetActive(true);
+        ObjectManager.instance.drawLineButton.SetActive(true);
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.tag=="line")
+        {
+            fall = false;
+            Debug.Log("9lwa");
+            GetComponent<Rigidbody>().useGravity = false;
+            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX;
+            transform.rotation = Quaternion.Euler(0, -90, 0);
+            GetComponent<Animator>().Play("hang");
+           
+        }
+      
+    }
+    private void FixedUpdate()
+    {
+      
+    }
+
 }

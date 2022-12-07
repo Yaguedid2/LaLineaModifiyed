@@ -64,7 +64,7 @@ public class RenderCamera : MonoBehaviour
 
 
         FecthServer.instance.call();
-        LineManager.instance.drawLine();
+        LineManager.instance.drawLine(false);
 
     }
     float xmin, xmax, ymin, ymax;
