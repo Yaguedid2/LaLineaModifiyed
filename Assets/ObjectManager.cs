@@ -35,7 +35,7 @@ public class ObjectManager : MonoBehaviour
         
     }
     int nbrOfSpawns = 1;
-    public void instantiateObject(List<string> listOfPossiblities)
+    public void instantiateObject(string type)
     {
         listOfImagePointsToWalkOn.Clear();
         AssetDatabase.Refresh();
@@ -130,12 +130,18 @@ public class ObjectManager : MonoBehaviour
              
        image.transform.localScale = new Vector3(10, 10, 1);
         //image.GetComponent<SpriteRenderer>().sprite = drawingImage;
-      
+
+
+        ObjectManager.instance.okButton.SetActive(false);
+        ObjectManager.instance.clearButton.SetActive(false);
+        ObjectManager.instance.drawingArea.SetActive(false);
+        ObjectManager.instance.drawLineButton.SetActive(false);
+        DrawingToJson.instance.imagePoints.Clear();
+        StrokeManager.instance.clearAll();
         
-       
-      //  image.transform.position = new Vector3(image.transform.position.x, image.transform.position.y, 0);
+        //  image.transform.position = new Vector3(image.transform.position.x, image.transform.position.y, 0);
         //if draw LIne
-        if(drawLine)
+        if (drawLine)
         {
 
             LineRenderer corr = Instantiate(correspandence);
@@ -162,10 +168,9 @@ public class ObjectManager : MonoBehaviour
 
             image.AddComponent<Rigidbody>();
             image.AddComponent<Object>();
+            image.GetComponent<Object>().setClassName(type);
         }
-
-        DrawingToJson.instance.imagePoints.Clear();
-       
+        LineManager.instance.drawLine(false);
         nbrOfSpawns++;
        
         

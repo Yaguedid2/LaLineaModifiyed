@@ -4,11 +4,15 @@ using UnityEngine;
 using System.Net.Http;
 using System;
 using Newtonsoft.Json;
-
+using UnityEngine.UI;
+using TMPro;
 
 public class FecthServer : MonoBehaviour
 {
+    public Canvas canvas;
+    public GameObject choiceButton;
     public static FecthServer instance;
+  
     private void Awake()
     {
         instance = this;
@@ -48,8 +52,7 @@ public class FecthServer : MonoBehaviour
        Debug.Log(json);
         getResponse(json);
         readyToGetResponse=true;
-        List<string> possibilities = new List<string>();
-        ObjectManager.instance.instantiateObject(possibilities);
+        
     }
 
 
@@ -223,12 +226,39 @@ public class FecthServer : MonoBehaviour
     {
 
         List<Root> myDeserializedClass = JsonConvert.DeserializeObject<List<Root>>(data);
+        float posOfButton = 80;
+        float anchorButton = 0;
         foreach (Root possibility in myDeserializedClass)
+        {
             SpeakManager.instance.Speak(possibility.className);
+            var button = Instantiate(choiceButton, Vector3.zero, Quaternion.identity);
+            listOfChoiceButtons.Add(button);
+            var rectTransform = button.GetComponent<RectTransform>();
+            rectTransform.SetParent(canvas.transform);
+            rectTransform.sizeDelta = new Vector2(160, 30);
+            rectTransform.localScale = new Vector3(1, 1, 1);
+            rectTransform.localPosition = new Vector2(posOfButton, 15);
+            button.GetComponentInChildren<TextMeshProUGUI>().text = possibility.className;
+            rectTransform.anchorMin = new Vector2(anchorButton, 0);
+            rectTransform.anchorMax = new Vector2(anchorButton, 0);
+            button.GetComponent<Button>().onClick.AddListener(()=> SpawnObject(possibility.className));
+            posOfButton -= 80;
+            anchorButton += 0.5f;
+        }
+           
+        
+      
 
        
     }
-
+    List<GameObject> listOfChoiceButtons = new List<GameObject>();
+    void SpawnObject(string className)
+    {
+        foreach (GameObject button in listOfChoiceButtons)
+            Destroy(button);
+        listOfChoiceButtons.Clear();
+        ObjectManager.instance.instantiateObject(className);
+    }
     public class Root
     {
         public double probability { get; set; }

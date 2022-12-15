@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Object : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public string className;
+  
     void Start()
     {
         
@@ -18,5 +19,9 @@ public class Object : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+    }
+    public void setClassName(string type)
+    {
+        className = type;
     }
 }

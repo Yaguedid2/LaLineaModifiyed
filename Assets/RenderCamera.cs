@@ -39,10 +39,7 @@ public class RenderCamera : MonoBehaviour
         Destroy(Image);
 
         File.WriteAllBytes(Application.dataPath + "/Backgrounds/" + FileCounter + ".png", Bytes);
-        ObjectManager.instance.okButton.SetActive(false);
-        ObjectManager.instance.clearButton.SetActive(false);
-        ObjectManager.instance.drawingArea.SetActive(false);
-        ObjectManager.instance.drawLineButton.SetActive(false);
+       
         
         //
 
@@ -60,10 +57,14 @@ public class RenderCamera : MonoBehaviour
       
         string final = r[0].Remove(r[0].Length - 1) + r[1] + r[2].Remove(0,1);
         File.WriteAllText(".\\Assets\\MyFile.json", final);
-        
+        if(!ObjectManager.instance.drawLine)
         FecthServer.instance.call(final);
-        LineManager.instance.drawLine(false);
-        StrokeManager.instance.clearAll();
+        else
+        {
+            ObjectManager.instance.instantiateObject("DrawnLine");
+        }
+       
+       
     }
     
     int[] box=new int[4];
