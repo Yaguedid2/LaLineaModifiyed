@@ -5,67 +5,115 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     Animator animator;
-    
-    public bool walkAnimationStarted=false;
+
+    public bool walkAnimationStarted = false;
     public float stepVelocity = 0.3f;
     public GameObject globalRef;
     Vector3 PositionToStopWalking;
     Vector3 EndOfLinePosition;
-    public bool addline=false;
+    public bool addline = false;
     [HideInInspector]
     public static PlayerController instance;
     public GameObject whereToSee;
     public bool fall = false;
-    BoxCollider playerCollider, fallingFromLineCollider;
+
+    BoxCollider playerCollider;
+    public BoxCollider fallingFromLineCollider;
     public LayerMask layerMask;
+
     private void Awake()
     {
         instance = this;
     }
-
+    Vector3 offsetBetweenBodyAndHead;
     void Start()
     {
-        animator = GetComponent < Animator>();
+        SpeakManager.instance.Speak("Here we go again !");
+         oneTime = true;
+       
+
+    }
+    void firstStep()
+    {
+        animator = GetComponent<Animator>();
         changeLinePosition(true);
         walkAnimationStarted = false;
+        offsetBetweenBodyAndHead = transform.position - fallingFromLineCollider.transform.position;
+        animator.Play("walk");
+        playerCollider = GetComponent<BoxCollider>();
 
-        SpeakManager.instance.Speak("zaml");
-        playerCollider = GetComponents<BoxCollider>()[1];
-        fallingFromLineCollider = GetComponents<BoxCollider>()[0];
     }
+    bool oneTime = true;
+
 
     float timeInSec = 0;
+    Vector3 oldPlayerPsoition;
+    float rot;
     void Update()
     {
-        float rot=calcRotation();
-        if (rot < -66 || rot>66)       
-            fall = true;
-        if(fall)
+        if (oneTime && GameManager.instance.GameLoaded)
         {
-            transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, -100, 0), 0.1f);
-            playerCollider.enabled = false;
-            fallingFromLineCollider.enabled = true;
-       
+            oneTime = false;
+            firstStep();
+        }
+        else if(!GameManager.instance.GameLoaded)
+            return;
+        if (!fall)
+            rot = calcRotation();
+        if (rot < -66 || rot > 66 && !fall)
+        {
+            fall = true;
+            oldPlayerPsoition = transform.position;
+
+
+
+
+        }
+        if (fall)
+        {
+            if (rot < -66)
+                Fall(true);
+            if (rot > 66)
+                Fall(false);
             return;
         }
-           
-       
-           
+
+
+
+
         timeInSec += Time.deltaTime;
         move();
-        //controleAnimation();
-        
+
+
 
     }
-    int indexOfLine = 1;
+    int indexOfLine = 1, indexOfCorrLine = 0;
+
     int indexOfpointOnDrawing = 0;
     public float diff;
-  
 
 
-    void controleAnimation()
+
+    void Fall(bool fallRight)
     {
-       
+        GetComponent<Animator>().Play("fall");
+        if (fallRight)
+        {
+            Debug.Log("right");
+            transform.rotation = Quaternion.Euler(new Vector3(-42.615f, 76.811f, -152.447f));
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x + 10, -100, 0), 0.1f);
+        }
+
+        else
+        {
+            Debug.Log("left");
+            transform.rotation = Quaternion.Euler(new Vector3(-42.615f, -76.811f, 152.447f));
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(PositionToStopWalking.x, -100, 0), 0.1f);
+        }
+
+
+        playerCollider.enabled = false;
+        fallingFromLineCollider.enabled = true;
     }
 
 
@@ -77,66 +125,82 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-          return transform.eulerAngles.x;
+            return transform.eulerAngles.x;
         }
     }
 
     public void move()
     {
-        if (walkAnimationStarted )
+        if (walkAnimationStarted)
         {
-            if(!ObjectManager.instance.drawLine)
+            if (!ObjectManager.instance.drawLine)
             {
-                    indexOfpointOnDrawing = 0;
-                
-                    if (transform.position.x > LineManager.instance.line.GetPosition(indexOfLine).x)
-                    {
-                    Vector3 targetposition = LineManager.instance.line.GetPosition(indexOfLine);
-                   
-                    Debug.Log(targetposition);
-                    var targetRotation = Quaternion.LookRotation(LineManager.instance.line.GetPosition(indexOfLine) - transform.position);
+
+
+                if (transform.position.x > LineManager.instance.line.GetPosition(indexOfLine).x)
+                {
+                    Vector3 targetposition = LineManager.instance.lineTransform.TransformPoint(LineManager.instance.line.GetPosition(indexOfLine));
+
+
+                    var targetRotation = Quaternion.LookRotation(targetposition - transform.position);
                     transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 5 * Time.deltaTime);
                     transform.position = Vector3.MoveTowards(transform.position, targetposition, stepVelocity);
-                    }
+                }
+                else
+                {
+                    if (indexOfLine < LineManager.instance.line.positionCount - 1)
+                        indexOfLine++;
                     else
                     {
-                        if(indexOfLine< LineManager.instance.line.positionCount-1)
-                        indexOfLine++;
-                        else
-                        {
-                        Debug.Log(indexOfLine);
-                            //EndOfTheLIne
-                            animator.Play("waitForLine");
-                        
+
+                        //EndOfTheLIne
+                        animator.Play("waitForLine");
+
                         showDrawingArea();
-                        }
-                        LineManager.instance.lineCurviness = Mathf.Abs(Mathf.Abs(LineManager.instance.line.GetPosition(indexOfLine - 1).y) - Mathf.Abs(LineManager.instance.line.GetPosition(indexOfLine).y)) + 1;
-
-                        timeInSec = 0;
                     }
-               
-            }else
+                    LineManager.instance.lineCurviness = Mathf.Abs(Mathf.Abs(LineManager.instance.line.GetPosition(indexOfLine - 1).y) - Mathf.Abs(LineManager.instance.line.GetPosition(indexOfLine).y)) + 1;
+
+                    timeInSec = 0;
+                }
+
+            } else
             {
-                Vector3 actualposition = transform.position;
-                Vector3 targetposition =ObjectManager.instance.listOfImagePointsToWalkOn[indexOfpointOnDrawing].transform.position;
-                Debug.Log(targetposition);
-                transform.position = Vector3.MoveTowards(actualposition, targetposition, stepVelocity);
+                if (indexOfCorrLine<4 &&  transform.position.x > ObjectManager.instance.corrLine.GetPosition(indexOfCorrLine).x)
+                {
+                    Vector3 targetpositionInCOrr = LineManager.instance.lineTransform.TransformPoint(ObjectManager.instance.corrLine.GetPosition(indexOfCorrLine));
 
-                var targetRotation = Quaternion.LookRotation(ObjectManager.instance.listOfImagePointsToWalkOn[indexOfpointOnDrawing].transform.position - transform.position);
-                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 5 * Time.deltaTime);
 
-               
+                    var targetRotationInCorr = Quaternion.LookRotation(targetpositionInCOrr - transform.position);
+                    transform.rotation = Quaternion.Slerp(transform.rotation, targetRotationInCorr, 5 * Time.deltaTime);
+                    transform.position = Vector3.MoveTowards(transform.position, targetpositionInCOrr, stepVelocity);
+                } else if (indexOfCorrLine < 4)
+                {
+                    indexOfCorrLine += 3;
+                } else
+                {
+                    Debug.Log("zz");
+                    Vector3 actualposition = transform.position;
+                    Vector3 targetposition = ObjectManager.instance.listOfImagePointsToWalkOn[indexOfpointOnDrawing].transform.position;
+
+                    transform.position = Vector3.MoveTowards(actualposition, targetposition, stepVelocity);
+
+                    var targetRotation = Quaternion.LookRotation(ObjectManager.instance.listOfImagePointsToWalkOn[indexOfpointOnDrawing].transform.position - transform.position);
+                    transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 5 * Time.deltaTime);
+                }
+
+
+
 
 
             }
 
-               
-         }
-           
-         
-           
-        
-           
+
+        }
+
+
+
+
+
 
     }
     private static float WrapAngle(float angle)
@@ -146,6 +210,7 @@ public class PlayerController : MonoBehaviour
             return angle - 360;
 
         return angle;
+       
     }
 
     private void OnTriggerEnter(Collider other)
@@ -159,22 +224,25 @@ public class PlayerController : MonoBehaviour
 
 
         }
-       
+
 
     }
 
-    
-  
+
+
 
     public void changeLinePosition(bool firstTime)
     {
         indexOfLine = 0;
-        float lineEnd = LineManager.instance.line.gameObject.transform.position.x + LineManager.instance.line.GetPosition(LineManager.instance.line.positionCount-1).x;
+        indexOfCorrLine = 0;
+        indexOfpointOnDrawing = 0;
+        fallingFromLineCollider.enabled = false;
+        float lineEnd = LineManager.instance.line.gameObject.transform.position.x + LineManager.instance.line.GetPosition(LineManager.instance.line.positionCount - 1).x;
 
         EndOfLinePosition = new Vector3(lineEnd, transform.position.y, transform.position.z);
         PositionToStopWalking = EndOfLinePosition;
-        if(!firstTime)
-        animator.Play("walk");
+        if (!firstTime)
+            animator.Play("walk");
         walkAnimationStarted = true;
     }
     void showDrawingArea()
@@ -187,21 +255,67 @@ public class PlayerController : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.tag=="line")
-        {
-            fall = false;
-            Debug.Log("9lwa");
-            GetComponent<Rigidbody>().useGravity = false;
-            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX;
-            transform.rotation = Quaternion.Euler(0, -90, 0);
-            GetComponent<Animator>().Play("hang");
-           
-        }
-      
-    }
-    private void FixedUpdate()
-    {
-      
+        if (collision.collider.tag == "line" && !alreadyHang)
+            StartCoroutine(fallingAndStanding(collision.contacts[0].point, rot < -66));
+
     }
 
+    bool alreadyHang = false;
+    public Vector3 positionWhereToStandAfterFall;
+    IEnumerator fallingAndStanding(Vector3 collisionPoint, bool fallRight)
+    {
+        alreadyHang = true;
+        positionWhereToStandAfterFall = collisionPoint;
+        fall = false;
+        GetComponent<Rigidbody>().useGravity = false;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        transform.rotation = Quaternion.Euler(0, -78, 0);
+
+        transform.position = collisionPoint + offsetBetweenBodyAndHead;
+        GetComponent<Animator>().Play("hang");
+        yield return new WaitForSeconds(3);
+        GetComponent<Animator>().Play("standAfterHang");
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationY;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationZ;
+
+        yield return new WaitForSeconds(3);
+        playerCollider.enabled = true;
+       
+        if (fallRight)
+        {
+            if(jumpOrErase)
+            {
+                Vector3 targetposition = LineManager.instance.lineTransform.TransformPoint(LineManager.instance.line.GetPosition(0));
+                transform.position = transform.position + new Vector3(0, 2, 0);
+                GetComponent<Animator>().Play("jump");
+
+                yield return new WaitForSeconds(1.1f);
+                transform.position = targetposition;
+                ObjectManager.instance.drawLine = false;
+                changeLinePosition(false);
+            }
+            else
+            {
+                LineManager.instance.eraseAndReDraw();
+                showDrawingArea();
+            }
+            //you can JUm Also
+           
+        } else
+        {
+            ObjectManager.instance.drawLine = false;
+            changeLinePosition(false);
+
+        }
+        alreadyHang = false;
+
+
+
+    }
+    bool jumpOrErase = true;
+       public void _jump()
+        {
+        jumpOrErase = true;
+        }
 }

@@ -6,6 +6,7 @@ public class LineManager : MonoBehaviour
 {
     public LineRenderer line;
     public GameObject lineObject;
+    public Transform lineTransform;
     public static LineManager instance;
     public float lineCurviness = 1;
     public int edgeOfline;
@@ -21,7 +22,7 @@ public class LineManager : MonoBehaviour
 
      void Start()
     {
-        edgeOfline = 2;
+        //edgeOfline = 2;
         drawLine(true);
     }
     bool firstTime = true;
@@ -31,27 +32,46 @@ public class LineManager : MonoBehaviour
         if (firstTime)
         {
            GameObject l= Instantiate(lineObject);
-            
+            lineTransform = l.transform;
+            line = l.GetComponent<LineRenderer>();
             //  Mesh mesh = new Mesh();
             // l.GetComponent<LineRenderer>().BakeMesh(mesh);
             //l.GetComponent<MeshCollider>().sharedMesh = mesh;
             //l.GetComponent<MeshCollider>().convex = true;
-            edgeOfline = 1;
+            //edgeOfline = 1;
         }
         else
         {
-            edgeOfline = line.positionCount - 1;
+            //edgeOfline = line.positionCount - 1;
             LineRenderer oldLine = line;
             GameObject l = Instantiate(lineObject);
-            start = l.transform.InverseTransformPoint(start);
-            l.GetComponent<LineRenderer>().SetPosition(0, new Vector3(start.x, -4.92f,start.z));
-            float y = Random.Range(-10f, 10f);
+            lineTransform = l.transform;
+            if(ObjectManager.instance.drawLine)
+            {
+                Vector3 s = ObjectManager.instance.drawingTransform.TransformPoint(start);
+                start = lineTransform.InverseTransformPoint(s);
+            }
+            else
+            {
+                start = oldLine.GetPosition(oldLine.positionCount - 1);
+            }
+            
+            l.GetComponent<LineRenderer>().SetPosition(0, new Vector3(start.x, start.y,start.z));
+            float y;
+            if(ObjectManager.instance.drawLine)
+             y = Random.Range(-10f, 10f);
+            else
+              y = Random.Range(-2f, 2f);
             l.GetComponent<LineRenderer>().SetPosition(1, start-new Vector3(10, 0, y));
             l.GetComponent<LineRenderer>().SetPosition(2, start - new Vector3(20, 0, y));
             l.GetComponent<LineRenderer>().SetPosition(3, start - new Vector3(30, 0, y));
 
            
             line = l.GetComponent<LineRenderer>();
+            if(ObjectManager.instance.drawLine)
+            {
+                PlayerController.instance.changeLinePosition(false);
+            }
            
             //Destroy(oldLine, 7);
 
@@ -75,7 +95,13 @@ public class LineManager : MonoBehaviour
 
             //line.gameObject.GetComponent<MeshCollider>().sharedMesh = mesh;
             //line.gameObject.GetComponent<MeshCollider>().convex = true;
-            PlayerController.instance.changeLinePosition(false);
+           
         }
+    }
+    public void eraseAndReDraw()
+    {
+        listOfLineEnds.RemoveAt(listOfLineEnds.Count - 1);
+        Destroy(lineTransform.gameObject);
+        Destroy(ObjectManager.instance.drawingTransform.gameObject);
     }
 }

@@ -26,10 +26,16 @@ public class DrawMesh : MonoBehaviour {
     }
     private void Start()
     {
+        strokePixelsX.Clear();
+        strokePixelsY.Clear();
+        strokePixelsXY.Clear();
+        DrawingToJson.instance.strokeIndexes.Add(DrawingToJson.instance.imagePoints.Count);
         canvasFull = false;
         strokeCreated = false;
         canDraw = true;
         drawArea = ObjectManager.instance.realDrawingArea;
+        //to seprate strokes in drawings
+       
     }
     bool firstClick = false;
     /// <summary>
@@ -108,13 +114,17 @@ public class DrawMesh : MonoBehaviour {
                 Vector2[] uv = new Vector2[mesh.uv.Length + 2];
                 int[] triangles = new int[mesh.triangles.Length + 6];
 
-                   strokePixelsX.Add(Mathf.Abs(Mathf.Floor(getPoistionOnDrawArea().x * 55.5f)));
+                   strokePixelsX.Add(getPoistionOnDrawArea().x);
                    
-                   strokePixelsY.Add(Mathf.Abs(Mathf.Floor(getPoistionOnDrawArea().y * 55.5f)));
+                   strokePixelsY.Add(getPoistionOnDrawArea().y);
+
+
                    
                     //forImagePoint
                     Vector2 point = new Vector2();
+                   
                     point = ObjectManager.instance.realDrawingArea.transform.InverseTransformPoint(getMouseWorlPosition());
+                    
                     indexOfPoint++;
                    
                   
@@ -231,8 +241,10 @@ public class DrawMesh : MonoBehaviour {
         if (Physics.Raycast(firePoint, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
         {
             Debug.DrawRay(firePoint, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-            
-            return new Vector2(hit.point.x-Camera.main.transform.position.x-ObjectManager.instance.realDrawingArea.transform.position.x- ObjectManager.instance.realDrawingArea.transform.localScale.x-1.2f, -hit.point.y+ ObjectManager.instance.realDrawingArea.transform.localScale.y/2);
+
+            Vector2 hitPos = hit.collider.transform.InverseTransformPoint(hit.point);
+            return new Vector2(Mathf.Floor((hitPos.x+0.5f)*500),Mathf.Floor(Mathf.Abs(hitPos.y-0.5f)*500));
+            //return new Vector2(hit.point.x-Camera.main.transform.position.x-ObjectManager.instance.realDrawingArea.transform.position.x- ObjectManager.instance.realDrawingArea.transform.localScale.x-1.2f, -hit.point.y+ ObjectManager.instance.realDrawingArea.transform.localScale.y/2);
         }
         else
         {
@@ -242,4 +254,5 @@ public class DrawMesh : MonoBehaviour {
         }
         return Vector2.zero;
     }
+   
 }

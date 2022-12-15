@@ -42,7 +42,8 @@ public class RenderCamera : MonoBehaviour
         ObjectManager.instance.okButton.SetActive(false);
         ObjectManager.instance.clearButton.SetActive(false);
         ObjectManager.instance.drawingArea.SetActive(false);
-        StrokeManager.instance.clearAll();
+        ObjectManager.instance.drawLineButton.SetActive(false);
+        
         //
 
         //call server to predict
@@ -58,29 +59,30 @@ public class RenderCamera : MonoBehaviour
         string[] r= json.Split('?');
       
         string final = r[0].Remove(r[0].Length - 1) + r[1] + r[2].Remove(0,1);
-        File.WriteAllText("C:\\Users\\yassine\\Desktop\\MyFile.json", final);
-
-
-
-
-        FecthServer.instance.call();
+        File.WriteAllText(".\\Assets\\MyFile.json", final);
+        
+        FecthServer.instance.call(final);
         LineManager.instance.drawLine(false);
-
+        StrokeManager.instance.clearAll();
     }
-    float xmin, xmax, ymin, ymax;
-    List<float> listOmins = new List<float>();
-    List<float> listOfMax = new List<float>();
-    List<float> listOminsY = new List<float>();
-    List<float> listOfMaxY = new List<float>();
+    
     int[] box=new int[4];
     string loopOnList()
     {
+       
+        float xmin, xmax, ymin, ymax;
+        List<float> listOmins = new List<float>();
+        List<float> listOfMax = new List<float>();
+        List<float> listOminsY = new List<float>();
+        List<float> listOfMaxY = new List<float>();
         //public List<List<List<float>>> imageStrokes = new List<List<List<float>>>();
         List<List<List<float>>> imageStrokes = DrawingToJson.instance.imageStrokes;
+       
         string r = "";
         r += "?[";
         int index = 0;
-        foreach(List<List<float>> stroke in imageStrokes)
+      
+        foreach (List<List<float>> stroke in imageStrokes)
         {
             r += "[";
             r = r.Trim();
@@ -88,6 +90,7 @@ public class RenderCamera : MonoBehaviour
             r = r.Trim();
 
             //float i = stroke[index][0].AsQueryable().Min();
+            
             listOmins.Add(stroke[0].Min());
             //float i2 = stroke[index].AsQueryable().Max();
             listOfMax.Add(stroke[0].Max());

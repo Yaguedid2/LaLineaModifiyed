@@ -41,10 +41,16 @@ public class StrokeManager : MonoBehaviour
     public void clearAll()
     {
         foreach (DrawMesh s in listOfStrokes)
+        {
+           
             Destroy(s.gameObject);
+        }
+           
         listOfStrokes.Clear();
         index = -1;
         createStroke();
+        DrawingToJson.instance.imageStrokes.Clear();
+        DrawingToJson.instance.imagePoints.Clear();
       
     }
 }

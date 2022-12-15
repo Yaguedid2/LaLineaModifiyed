@@ -16,7 +16,7 @@ public class SpeakManager : MonoBehaviour
     }
     void Start()
     {
-        StartCoroutine(generateText());
+       
     }
 
     // Update is called once per frame
