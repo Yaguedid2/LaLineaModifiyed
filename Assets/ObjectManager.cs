@@ -35,7 +35,7 @@ public class ObjectManager : MonoBehaviour
         
     }
     int nbrOfSpawns = 1;
-    public void instantiateObject(string type)
+    public void instantiateObject(string type,int index)
     {
         listOfImagePointsToWalkOn.Clear();
         AssetDatabase.Refresh();
@@ -159,7 +159,7 @@ public class ObjectManager : MonoBehaviour
             
             // Destroy(corr, 7);
             LineManager.instance.start = leftCorner.transform.localPosition;
-            
+            image.name = "line";
         }
         else
         {
@@ -168,7 +168,10 @@ public class ObjectManager : MonoBehaviour
 
             image.AddComponent<Rigidbody>();
             image.AddComponent<Object>();
+            image.name = type;
             image.GetComponent<Object>().setClassName(type);
+            image.GetComponent<Object>().setIndex(index);
+            ObjectBehaviorManager.instance.behave(image.GetComponent<Object>());
         }
         LineManager.instance.drawLine(false);
         nbrOfSpawns++;

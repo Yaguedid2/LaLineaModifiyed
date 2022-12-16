@@ -5,6 +5,7 @@ using UnityEngine;
 public class Object : MonoBehaviour
 {
     public string className;
+    public int index;
   
     void Start()
     {
@@ -23,5 +24,9 @@ public class Object : MonoBehaviour
     public void setClassName(string type)
     {
         className = type;
+    }
+    public void setIndex(int i)
+    {
+        index = i;
     }
 }

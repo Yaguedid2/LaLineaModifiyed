@@ -28,8 +28,10 @@ public class PlayerController : MonoBehaviour
     Vector3 offsetBetweenBodyAndHead;
     void Start()
     {
-        SpeakManager.instance.Speak("Here we go again !");
-         oneTime = true;
+        SpeakManager.instance.Speak("Oh Shit ", false,0);
+        SpeakManager.instance.Speak("Here We Go ", false,0);
+        SpeakManager.instance.Speak("Again ", false,0);
+        oneTime = true;
        
 
     }
@@ -178,7 +180,7 @@ public class PlayerController : MonoBehaviour
                     indexOfCorrLine += 3;
                 } else
                 {
-                    Debug.Log("zz");
+                    
                     Vector3 actualposition = transform.position;
                     Vector3 targetposition = ObjectManager.instance.listOfImagePointsToWalkOn[indexOfpointOnDrawing].transform.position;
 
@@ -252,6 +254,7 @@ public class PlayerController : MonoBehaviour
         ObjectManager.instance.okButton.SetActive(true);
         ObjectManager.instance.clearButton.SetActive(true);
         ObjectManager.instance.drawLineButton.SetActive(true);
+        Hand.instance.showHand(true);
     }
     private void OnCollisionEnter(Collision collision)
     {

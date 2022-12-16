@@ -197,7 +197,7 @@ public class FecthServer : MonoBehaviour
                            
                             Debug.Log(data);
                             
-                            instance.dataToJson(data);
+                           instance.StartCoroutine(instance.dataToJson(data));
                             instance.readyToGetResponse = false;
                         }
                         else
@@ -222,28 +222,37 @@ public class FecthServer : MonoBehaviour
         
         alreadyLoading = false;
     }
-    void dataToJson(string data)
+    IEnumerator  dataToJson(string data)
     {
 
         List<Root> myDeserializedClass = JsonConvert.DeserializeObject<List<Root>>(data);
-        float posOfButton = 80;
+        ObjectManager.instance.clearButton.SetActive(false);
+        ObjectManager.instance.okButton.SetActive(false);
+        ObjectManager.instance.drawLineButton.SetActive(false);
+        Hand.instance.showHand(false);
+        SpeakManager.instance.Speak("Hmmm! ", false,2);
+        yield return new WaitForSeconds(2f);
+        SpeakManager.instance.Speak("Here is what i think ",false,5);
+        yield return new WaitForSeconds(5f);
+        float posOfButton = 400;
         float anchorButton = 0;
         foreach (Root possibility in myDeserializedClass)
         {
-            SpeakManager.instance.Speak(possibility.className);
+           
             var button = Instantiate(choiceButton, Vector3.zero, Quaternion.identity);
             listOfChoiceButtons.Add(button);
             var rectTransform = button.GetComponent<RectTransform>();
             rectTransform.SetParent(canvas.transform);
             rectTransform.sizeDelta = new Vector2(160, 30);
             rectTransform.localScale = new Vector3(1, 1, 1);
-            rectTransform.localPosition = new Vector2(posOfButton, 15);
+            rectTransform.localPosition = new Vector2(557, posOfButton);
             button.GetComponentInChildren<TextMeshProUGUI>().text = possibility.className;
-            rectTransform.anchorMin = new Vector2(anchorButton, 0);
-            rectTransform.anchorMax = new Vector2(anchorButton, 0);
-            button.GetComponent<Button>().onClick.AddListener(()=> SpawnObject(possibility.className));
-            posOfButton -= 80;
+            rectTransform.anchorMin = new Vector2(0, 0);
+            rectTransform.anchorMax = new Vector2(0, 0);
+            button.GetComponent<Button>().onClick.AddListener(()=> SpawnObject(possibility.className,possibility.index));
+            posOfButton -= 50;
             anchorButton += 0.5f;
+            yield return new WaitForSeconds(0.3f);
         }
            
         
@@ -252,12 +261,12 @@ public class FecthServer : MonoBehaviour
        
     }
     List<GameObject> listOfChoiceButtons = new List<GameObject>();
-    void SpawnObject(string className)
+    void SpawnObject(string className,int index)
     {
         foreach (GameObject button in listOfChoiceButtons)
             Destroy(button);
         listOfChoiceButtons.Clear();
-        ObjectManager.instance.instantiateObject(className);
+        ObjectManager.instance.instantiateObject(className,index);
     }
     public class Root
     {

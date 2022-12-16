@@ -51,6 +51,7 @@ public class StrokeManager : MonoBehaviour
         createStroke();
         DrawingToJson.instance.imageStrokes.Clear();
         DrawingToJson.instance.imagePoints.Clear();
+        DrawingToJson.instance.strokeIndexes.Clear();
       
     }
 }

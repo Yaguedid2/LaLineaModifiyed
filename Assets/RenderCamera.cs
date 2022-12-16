@@ -4,13 +4,15 @@ using UnityEngine;
 using System.IO;
 using System.Linq;
 using System;
+using UnityEngine.UI;
 
 
 public class RenderCamera : MonoBehaviour
 {
     // Start is called before the first frame update
     public int FileCounter = 0;
-
+    public GameObject errorMessage;
+    public Canvas canvas;
     private void Start()
     {
         ObjectManager.instance.okButton.SetActive(false);
@@ -20,6 +22,13 @@ public class RenderCamera : MonoBehaviour
 
     public  void CamCapture()
     {
+        if (DrawingToJson.instance.imageStrokes.Count == 0)
+        {
+
+            StartCoroutine(showError());
+            return;
+        }
+        
 
        
         Camera Cam = GetComponent<Camera>();
@@ -61,7 +70,7 @@ public class RenderCamera : MonoBehaviour
         FecthServer.instance.call(final);
         else
         {
-            ObjectManager.instance.instantiateObject("DrawnLine");
+            ObjectManager.instance.instantiateObject("DrawnLine",500);
         }
        
        
@@ -128,10 +137,20 @@ public class RenderCamera : MonoBehaviour
         r = r.Remove(r.Length - 1);
         r += "]?";
         r = r.Trim();
-        xmin = listOmins.AsQueryable().Min();
+        if(listOmins.Count<=0 )
+        {
+            xmin = 0;
+            xmax = 0;
+            ymin = 0;
+            ymax = 0;
+        }else
+        {
+             xmin = listOmins.AsQueryable().Min();
         xmax = listOfMax.AsQueryable().Max();
         ymin = listOminsY.AsQueryable().Min();
         ymax = listOfMaxY.AsQueryable().Max();
+        }
+       
         box[0] = 0;
         box[1] = 0;
         box[2] = (int)xmax;
@@ -153,6 +172,29 @@ public class RenderCamera : MonoBehaviour
         public string strokes;
         public int[] box;
       
+    }
+
+    IEnumerator showError()
+    {
+        var message = Instantiate(errorMessage);
+
+        var rectTransform = message.GetComponent<RectTransform>();
+        
+        rectTransform.SetParent(canvas.transform);
+        rectTransform.sizeDelta = new Vector2(100, 100);
+        rectTransform.localScale = new Vector3(4.1747f, 0.73752f, 1);
+        
+        float positionY = 50;
+        rectTransform.localPosition = new Vector2(0, positionY);
+
+        rectTransform.anchorMin = new Vector2(0.5f, 1);
+        rectTransform.anchorMax = new Vector2(0.5f, 1);
+        yield return new WaitForSeconds(1f);
+        Destroy(message);
+
+        //rectTransform.localPosition = new Vector2(0, -50);
+
+
     }
 
 }

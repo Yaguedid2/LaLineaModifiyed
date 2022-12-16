@@ -198,7 +198,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &191576802
 GameObject:
@@ -633,6 +633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 517227173}
   - component: {fileID: 517227172}
+  - component: {fileID: 517227174}
   m_Layer: 0
   m_Name: ObjectManager
   m_TagString: Untagged
@@ -680,8 +681,7266 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &517227174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517227171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb964b2ebfc5a19498606fb2a5b2e7ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objects:
+  - className: The Eiffel Tower
+    index: 0
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: The Great Wall of China
+    index: 1
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: The Mona Lisa
+    index: 2
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: aircraft carrier
+    index: 3
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: airplane
+    index: 4
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: alarm clock
+    index: 5
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: ambulance
+    index: 6
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: angel
+    index: 7
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: animal migration
+    index: 8
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: ant
+    index: 9
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: anvil
+    index: 10
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: apple
+    index: 11
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: arm
+    index: 12
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: asparagus
+    index: 13
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: axe
+    index: 14
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: backpack
+    index: 15
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: banana
+    index: 16
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bandage
+    index: 17
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: barn
+    index: 18
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: baseball
+    index: 19
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: baseball bat
+    index: 20
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: basket
+    index: 21
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: basketball
+    index: 22
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bat
+    index: 23
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bathtub
+    index: 24
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: beach
+    index: 25
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bear
+    index: 26
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: beard
+    index: 27
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bed
+    index: 28
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bee
+    index: 29
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: belt
+    index: 30
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bench
+    index: 31
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bicycle
+    index: 32
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: binoculars
+    index: 33
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bird
+    index: 34
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: birthday cake
+    index: 35
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: blackberry
+    index: 36
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: blueberry
+    index: 37
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: book
+    index: 38
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: boomerang
+    index: 39
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bottlecap
+    index: 40
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bowtie
+    index: 41
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bracelet
+    index: 42
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: brain
+    index: 43
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bread
+    index: 44
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bridge
+    index: 45
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: broccoli
+    index: 46
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: broom
+    index: 47
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bucket
+    index: 48
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bulldozer
+    index: 49
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bus
+    index: 50
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: bush
+    index: 51
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: butterfly
+    index: 52
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: cactus
+    index: 53
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: cake
+    index: 54
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: calculator
+    index: 55
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: calendar
+    index: 56
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: camel
+    index: 57
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: camera
+    index: 58
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: camouflage
+    index: 59
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: campfire
+    index: 60
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: candle
+    index: 61
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: cannon
+    index: 62
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: canoe
+    index: 63
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: car
+    index: 64
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: carrot
+    index: 65
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: castle
+    index: 66
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: cat
+    index: 67
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: ceiling fan
+    index: 68
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: cell phone
+    index: 69
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: cello
+    index: 70
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: chair
+    index: 71
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: chandelier
+    index: 72
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: church
+    index: 73
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: circle
+    index: 74
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: clarinet
+    index: 75
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: clock
+    index: 76
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: cloud
+    index: 77
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: coffee cup
+    index: 78
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: compass
+    index: 79
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: computer
+    index: 80
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: cookie
+    index: 81
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: cooler
+    index: 82
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: couch
+    index: 83
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: cow
+    index: 84
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: crab
+    index: 85
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: crayon
+    index: 86
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: crocodile
+    index: 87
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: crown
+    index: 88
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: cruise ship
+    index: 89
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: cup
+    index: 90
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: diamond
+    index: 91
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: dishwasher
+    index: 92
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: diving board
+    index: 93
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: dog
+    index: 94
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: dolphin
+    index: 95
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: donut
+    index: 96
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: door
+    index: 97
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: dragon
+    index: 98
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: dresser
+    index: 99
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: drill
+    index: 100
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: drums
+    index: 101
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: duck
+    index: 102
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: dumbbell
+    index: 103
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: ear
+    index: 104
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: elbow
+    index: 105
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: elephant
+    index: 106
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: envelope
+    index: 107
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: eraser
+    index: 108
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: eye
+    index: 109
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: eyeglasses
+    index: 110
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: face
+    index: 111
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: fan
+    index: 112
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: feather
+    index: 113
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: fence
+    index: 114
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: finger
+    index: 115
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: fire hydrant
+    index: 116
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: fireplace
+    index: 117
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: firetruck
+    index: 118
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: fish
+    index: 119
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: flamingo
+    index: 120
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: flashlight
+    index: 121
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: flip flops
+    index: 122
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: floor lamp
+    index: 123
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: flower
+    index: 124
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: flying saucer
+    index: 125
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: foot
+    index: 126
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: fork
+    index: 127
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: frog
+    index: 128
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: frying pan
+    index: 129
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: garden
+    index: 130
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: garden hose
+    index: 131
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: giraffe
+    index: 132
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: goatee
+    index: 133
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: golf club
+    index: 134
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: grapes
+    index: 135
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: grass
+    index: 136
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: guitar
+    index: 137
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: hamburger
+    index: 138
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: hammer
+    index: 139
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: hand
+    index: 140
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: harp
+    index: 141
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: hat
+    index: 142
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: headphones
+    index: 143
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: hedgehog
+    index: 144
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: helicopter
+    index: 145
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: helmet
+    index: 146
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: hexagon
+    index: 147
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: hockey puck
+    index: 148
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: hockey stick
+    index: 149
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: horse
+    index: 150
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: hospital
+    index: 151
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: hot air balloon
+    index: 152
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: hot dog
+    index: 153
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: hot tub
+    index: 154
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: hourglass
+    index: 155
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: house
+    index: 156
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: house plant
+    index: 157
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: hurricane
+    index: 158
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: ice cream
+    index: 159
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: jacket
+    index: 160
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: jail
+    index: 161
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: kangaroo
+    index: 162
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: key
+    index: 163
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: keyboard
+    index: 164
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: knee
+    index: 165
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: knife
+    index: 166
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: ladder
+    index: 167
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: lantern
+    index: 168
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: laptop
+    index: 169
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: leaf
+    index: 170
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: leg
+    index: 171
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: light bulb
+    index: 172
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: lighter
+    index: 173
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: lighthouse
+    index: 174
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: lightning
+    index: 175
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: line
+    index: 176
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: lion
+    index: 177
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: lipstick
+    index: 178
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: lobster
+    index: 179
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: lollipop
+    index: 180
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: mailbox
+    index: 181
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: map
+    index: 182
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: marker
+    index: 183
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: matches
+    index: 184
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: megaphone
+    index: 185
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: mermaid
+    index: 186
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: microphone
+    index: 187
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: microwave
+    index: 188
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: monkey
+    index: 189
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: moon
+    index: 190
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: mosquito
+    index: 191
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: motorbike
+    index: 192
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: mountain
+    index: 193
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: mouse
+    index: 194
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: moustache
+    index: 195
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: mouth
+    index: 196
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: mug
+    index: 197
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: mushroom
+    index: 198
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: nail
+    index: 199
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: necklace
+    index: 200
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: nose
+    index: 201
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: ocean
+    index: 202
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: octagon
+    index: 203
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: octopus
+    index: 204
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: onion
+    index: 205
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: oven
+    index: 206
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: owl
+    index: 207
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: paint can
+    index: 208
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: paintbrush
+    index: 209
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: palm tree
+    index: 210
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: panda
+    index: 211
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: pants
+    index: 212
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: paper clip
+    index: 213
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: parachute
+    index: 214
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: parrot
+    index: 215
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: passport
+    index: 216
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: peanut
+    index: 217
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: pear
+    index: 218
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: peas
+    index: 219
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: pencil
+    index: 220
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: penguin
+    index: 221
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: piano
+    index: 222
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: pickup truck
+    index: 223
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: picture frame
+    index: 224
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: pig
+    index: 225
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: pillow
+    index: 226
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: pineapple
+    index: 227
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: pizza
+    index: 228
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: pliers
+    index: 229
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: police car
+    index: 230
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: pond
+    index: 231
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: pool
+    index: 232
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: popsicle
+    index: 233
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: postcard
+    index: 234
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: potato
+    index: 235
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: power outlet
+    index: 236
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: purse
+    index: 237
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: rabbit
+    index: 238
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: raccoon
+    index: 239
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: radio
+    index: 240
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: rain
+    index: 241
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: rainbow
+    index: 242
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: rake
+    index: 243
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: remote control
+    index: 244
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: rhinoceros
+    index: 245
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: rifle
+    index: 246
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: river
+    index: 247
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: roller coaster
+    index: 248
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: rollerskates
+    index: 249
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: sailboat
+    index: 250
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: sandwich
+    index: 251
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: saw
+    index: 252
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: saxophone
+    index: 253
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: school bus
+    index: 254
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: scissors
+    index: 255
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: scorpion
+    index: 256
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: screwdriver
+    index: 257
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: sea turtle
+    index: 258
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: see saw
+    index: 259
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: shark
+    index: 260
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: sheep
+    index: 261
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: shoe
+    index: 262
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: shorts
+    index: 263
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: shovel
+    index: 264
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: sink
+    index: 265
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: skateboard
+    index: 266
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: skull
+    index: 267
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: skyscraper
+    index: 268
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: sleeping bag
+    index: 269
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: smiley face
+    index: 270
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: snail
+    index: 271
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: snake
+    index: 272
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: snorkel
+    index: 273
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: snowflake
+    index: 274
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: snowman
+    index: 275
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: soccer ball
+    index: 276
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: sock
+    index: 277
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: speedboat
+    index: 278
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: spider
+    index: 279
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: spoon
+    index: 280
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: spreadsheet
+    index: 281
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: square
+    index: 282
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: squiggle
+    index: 283
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: squirrel
+    index: 284
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: stairs
+    index: 285
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: star
+    index: 286
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: steak
+    index: 287
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: stereo
+    index: 288
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: stethoscope
+    index: 289
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: stitches
+    index: 290
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: stop sign
+    index: 291
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: stove
+    index: 292
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: strawberry
+    index: 293
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: streetlight
+    index: 294
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: string bean
+    index: 295
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: submarine
+    index: 296
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: suitcase
+    index: 297
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: sun
+    index: 298
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: swan
+    index: 299
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: sweater
+    index: 300
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: swing set
+    index: 301
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: sword
+    index: 302
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: syringe
+    index: 303
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: t-shirt
+    index: 304
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: table
+    index: 305
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: teapot
+    index: 306
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: teddy-bear
+    index: 307
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: telephone
+    index: 308
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: television
+    index: 309
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: tennis racquet
+    index: 310
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: tent
+    index: 311
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: tiger
+    index: 312
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: toaster
+    index: 313
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: toe
+    index: 314
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: toilet
+    index: 315
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: tooth
+    index: 316
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: toothbrush
+    index: 317
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: toothpaste
+    index: 318
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: tornado
+    index: 319
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: tractor
+    index: 320
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: traffic light
+    index: 321
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: train
+    index: 322
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: tree
+    index: 323
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: triangle
+    index: 324
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: trombone
+    index: 325
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: truck
+    index: 326
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: trumpet
+    index: 327
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: umbrella
+    index: 328
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: underwear
+    index: 329
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: van
+    index: 330
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: vase
+    index: 331
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: violin
+    index: 332
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: washing machine
+    index: 333
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: watermelon
+    index: 334
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: waterslide
+    index: 335
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: whale
+    index: 336
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: wheel
+    index: 337
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: windmill
+    index: 338
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: wine bottle
+    index: 339
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: wine glass
+    index: 340
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: wristwatch
+    index: 341
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: yoga
+    index: 342
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: zebra
+    index: 343
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
+  - className: zigzag
+    index: 344
+    objectCategories:
+      bigSize: 0
+      admire: 1
+      fly: 0
+      ride: 0
+      faith: 0
+      afraid: 0
+      eat: 0
+      shoot: 0
+      axe: 0
+      backpack: 0
+      enter: 0
+      sleep: 0
+      basket: 0
+      bed: 0
+      sitDown: 0
+      book: 0
+      animalRide: 0
+      drive: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,7 +8346,7 @@ RectTransform:
   - {fileID: 1922948107}
   - {fileID: 1146737588}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1378,6 +8637,126 @@ RectTransform:
   m_AnchoredPosition: {x: -28, y: -2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &835814847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 835814850}
+  - component: {fileID: 835814849}
+  - component: {fileID: 835814848}
+  - component: {fileID: 835814851}
+  m_Layer: 0
+  m_Name: handImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &835814848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835814847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af9b4f7d5dcae944799bbfe47537b554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!212 &835814849
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835814847}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 21
+  m_Sprite: {fileID: 21300000, guid: 5a26e7cb435c28f48acf8acfb83c1694, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5, y: 5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &835814850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835814847}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.71, y: -1.97, z: 0}
+  m_LocalScale: {x: 2.6063, y: 2.6063, z: 2.6063}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &835814851
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835814847}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.16, y: 4.15}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.16, y: 4.15}
+  m_EdgeRadius: 0
 --- !u!1 &867520499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1598,7 +8977,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &978506948
 GameObject:
@@ -1628,7 +9007,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &988347974
 GameObject:
@@ -2671,7 +10050,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1181323327
 MonoBehaviour:
@@ -2866,7 +10245,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1345651056
 GameObject:
@@ -2944,7 +10323,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1413152025
 GameObject:
@@ -3345,6 +10724,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FileCounter: 0
+  errorMessage: {fileID: 7992067800280524581, guid: 86e75069165e8a24dbe5784ea85bbffc,
+    type: 3}
+  canvas: {fileID: 666312138}
 --- !u!1 &1435892029
 GameObject:
   m_ObjectHideFlags: 0
@@ -3994,7 +11376,7 @@ Transform:
   m_Children:
   - {fileID: 2095476053}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1815594559
 GameObject:
@@ -4612,966 +11994,6 @@ PrefabInstance:
       propertyPath: happinessText
       value: 
       objectReference: {fileID: 520203441}
-    - target: {fileID: 8366489418183361991, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00096598495
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361991, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.70143825
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361991, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.00022890122
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361991, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7127296
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361991, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.001649107
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361991, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.53756213
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361991, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0043350467
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361985, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.000000077951015
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361985, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.000000043289837
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361985, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.044567257
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361985, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.99900645
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361985, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0043312935
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361985, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.07350048
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361985, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 9.313226e-10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361999, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.000000043990443
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361999, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.000000017973454
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361999, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.07922261
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361999, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.01936974
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361999, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.13551767
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361999, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0000000041909516
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361997, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.0005527476
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361997, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.00001456178
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361997, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.019594964
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361997, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.0658141e-14
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361997, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.11913517
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183361997, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0000000018626451
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362019, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.77034163
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362019, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.11188045
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362019, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.13521421
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362019, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.6130039
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362019, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.015249786
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362019, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.31068757
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362019, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.019204078
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362011, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.51535434
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362011, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.26075068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362011, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.19680712
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362011, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.79226625
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362011, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0000000037252903
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362011, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.13966922
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362011, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.000000063329935
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362045, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.0072900653
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362045, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.1813791
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362045, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.07111936
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362045, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9808111
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362045, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.1641532e-10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362045, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.26387742
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362045, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.00000020395964
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362027, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.19068144
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362027, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.6477372
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362027, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.007166848
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362027, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7375811
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362027, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.000000027008355
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362027, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.19866192
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362027, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.000000011641534
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362037, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.08027116
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362037, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.2350834
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362037, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.18254441
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362037, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9512991
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362037, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.012653852
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362037, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.062184103
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362037, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0040377756
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362033, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.19129126
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362033, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.06602692
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362033, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.44045332
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362033, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.8746708
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362033, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0000000018626451
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362033, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.053610954
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362033, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.000000047672067
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362003, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.47954458
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362003, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.55392134
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362003, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.02889305
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362003, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.67998046
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362003, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.013693391
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362003, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.03710308
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362015, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.12413905
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362015, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.08859388
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362015, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.32933968
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362015, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9318133
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362015, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0000005764886
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362015, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.028589418
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362015, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.000000008381903
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362017, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.11267154
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362017, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.64688337
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362017, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7483376
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362017, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.094010025
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362017, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.015247834
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362017, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.31073
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362017, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.019225359
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362009, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5949984
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362009, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.16071448
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362009, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.121661566
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362009, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.77804005
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362009, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.000000011175873
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362009, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.13966918
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362009, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.000000026077032
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362043, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.02771768
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362043, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.1824191
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362043, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.11244281
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362043, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.97637683
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362043, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.00000007508789
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362043, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.26387742
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362043, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.000000008381903
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362025, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.19099256
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362025, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.53460634
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362025, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.02515693
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362025, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.82285184
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362025, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.000000056810684
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362025, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.19866174
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362025, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.00000002374873
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362035, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.10335943
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362035, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.21600965
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362035, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.1283259
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362035, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.96238726
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362035, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.012653814
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362035, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.06218411
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362035, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.00403777
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362047, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.21838495
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362047, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.066295125
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362047, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5008092
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362047, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.8349271
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362047, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.000000031199317
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362047, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.053610913
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362047, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.00000004144387
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362001, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.48457584
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362001, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.5605311
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362001, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.016841825
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362001, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.67134756
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362001, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.013693375
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362001, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.037103046
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362001, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.053495873
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362013, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.12402355
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362013, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.09147884
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362013, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.31282037
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362013, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.93722636
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362013, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.00000059697805
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362013, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.02858946
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362013, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.000000040978207
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362041, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00054794276
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362041, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.00007388698
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362041, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.08818189
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362041, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9961043
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362041, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.000024046632
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362041, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.000014318153
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362039, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00000018715977
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362039, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.0000001578468
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362039, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.07571646
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362039, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.99712944
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362039, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0018450834
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362039, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.077221416
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362039, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0000000018626451
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362007, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.989618
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362007, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.10701516
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362007, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.07052101
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362007, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.06504494
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362007, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0019308967
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362007, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.060946107
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362007, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.1009438
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362023, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.043198995
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362023, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.062029112
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362023, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.22747928
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362023, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.97084475
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362023, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.00000001490117
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362023, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.3119882
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362023, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.000000007450583
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362031, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.78231835
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362031, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.6223416
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362031, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.0021018237
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362031, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.025781173
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362031, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.000060834034
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362031, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.29228526
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362031, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.00028397897
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362005, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.019534197
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362005, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.075460374
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362005, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.99142456
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362005, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.10488791
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362005, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0019309637
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362005, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.06094607
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362005, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.1016499
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362021, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.016475389
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362021, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.04311323
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362021, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.22506675
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362021, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9732497
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362021, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.000000018626489
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362021, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.31198812
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362021, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.000000003725295
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362029, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.7791939
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362029, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.6183991
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362029, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.051002435
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362029, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.08853399
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362029, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.000060878818
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362029, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.29228488
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366489418183362029, guid: 2c05cbcd07612ee49922767d78732b2e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.00028401654
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c05cbcd07612ee49922767d78732b2e, type: 3}
 --- !u!4 &7045748333643536121 stripped
