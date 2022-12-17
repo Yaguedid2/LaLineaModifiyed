@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     public GameObject whereToSee;
     public bool fall = false;
 
-    BoxCollider playerCollider;
+    CapsuleCollider playerCollider;
     public BoxCollider fallingFromLineCollider;
     public LayerMask layerMask;
 
@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
         walkAnimationStarted = false;
         offsetBetweenBodyAndHead = transform.position - fallingFromLineCollider.transform.position;
         animator.Play("walk");
-        playerCollider = GetComponent<BoxCollider>();
+        playerCollider = GetComponent<CapsuleCollider>();
 
     }
     bool oneTime = true;
