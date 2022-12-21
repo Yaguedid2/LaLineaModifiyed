@@ -10,13 +10,14 @@ public class PlayerController : MonoBehaviour
     public float stepVelocity = 0.3f;
     public GameObject globalRef;
     Vector3 PositionToStopWalking;
+    public Transform hand;
     Vector3 EndOfLinePosition;
     public bool addline = false;
     [HideInInspector]
     public static PlayerController instance;
     public GameObject whereToSee;
     public bool fall = false;
-
+   
     CapsuleCollider playerCollider;
     public BoxCollider fallingFromLineCollider;
     public LayerMask layerMask;
@@ -28,9 +29,9 @@ public class PlayerController : MonoBehaviour
     Vector3 offsetBetweenBodyAndHead;
     void Start()
     {
-        SpeakManager.instance.Speak("Oh Shit ", false,0);
-        SpeakManager.instance.Speak("Here We Go ", false,0);
-        SpeakManager.instance.Speak("Again ", false,0);
+        SpeakManager.instance.Speak("Oh Shit ", false,2);
+        SpeakManager.instance.Speak("Here We Go ", false,2);
+        SpeakManager.instance.Speak("Again ", false,2);
         oneTime = true;
        
 
@@ -89,7 +90,7 @@ public class PlayerController : MonoBehaviour
 
 
     }
-    int indexOfLine = 1, indexOfCorrLine = 0;
+    public int indexOfLine = 1, indexOfCorrLine = 0;
 
     int indexOfpointOnDrawing = 0;
     public float diff;
@@ -235,6 +236,7 @@ public class PlayerController : MonoBehaviour
 
     public void changeLinePosition(bool firstTime)
     {
+        Debug.Log("hey");
         indexOfLine = 0;
         indexOfCorrLine = 0;
         indexOfpointOnDrawing = 0;
@@ -255,6 +257,8 @@ public class PlayerController : MonoBehaviour
         ObjectManager.instance.clearButton.SetActive(true);
         ObjectManager.instance.drawLineButton.SetActive(true);
         Hand.instance.showHand(true);
+        foreach(Object g in FindObjectsOfType<Object>())
+            Destroy(g.gameObject);
     }
     private void OnCollisionEnter(Collision collision)
     {

@@ -13,6 +13,7 @@ public class RenderCamera : MonoBehaviour
     public int FileCounter = 0;
     public GameObject errorMessage;
     public Canvas canvas;
+    public GameObject handImage;
     private void Start()
     {
         ObjectManager.instance.okButton.SetActive(false);
@@ -48,15 +49,15 @@ public class RenderCamera : MonoBehaviour
         Destroy(Image);
 
         File.WriteAllBytes(Application.dataPath + "/Backgrounds/" + FileCounter + ".png", Bytes);
-       
-        
+
+
         //
 
         //call server to predict
         //
 
-        
 
+        handImage.SetActive(false);
         MyClass myObject = new MyClass();
       
         myObject.strokes = loopOnList();

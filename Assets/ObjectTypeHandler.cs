@@ -54,6 +54,7 @@ public class ObjectTypeHandler : MonoBehaviour
         public bool book;
         public bool animalRide;
         public bool drive;
+        public bool pray;
 
 
     }

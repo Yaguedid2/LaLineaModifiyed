@@ -23,9 +23,9 @@ public class FecthServer : MonoBehaviour
 
 
         modelLoaded = false;
-        
-    
-        
+
+     
+
     }
     private void Update()
     {
@@ -193,8 +193,8 @@ public class FecthServer : MonoBehaviour
                         //If the data isn't null return log convert the data using newtonsoft JObject Parse class method on the data.
                         if (data != null)
                         {
-                           
-                           
+                            instance.canSpawnButtons = true;
+
                             Debug.Log(data);
                             
                            instance.StartCoroutine(instance.dataToJson(data));
@@ -238,7 +238,8 @@ public class FecthServer : MonoBehaviour
         float anchorButton = 0;
         foreach (Root possibility in myDeserializedClass)
         {
-           
+            if (!canSpawnButtons)
+                break;
             var button = Instantiate(choiceButton, Vector3.zero, Quaternion.identity);
             listOfChoiceButtons.Add(button);
             var rectTransform = button.GetComponent<RectTransform>();
@@ -261,12 +262,15 @@ public class FecthServer : MonoBehaviour
        
     }
     List<GameObject> listOfChoiceButtons = new List<GameObject>();
+    bool canSpawnButtons = true;
     void SpawnObject(string className,int index)
     {
+        canSpawnButtons = false;
         foreach (GameObject button in listOfChoiceButtons)
             Destroy(button);
         listOfChoiceButtons.Clear();
         ObjectManager.instance.instantiateObject(className,index);
+        
     }
     public class Root
     {

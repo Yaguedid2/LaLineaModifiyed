@@ -26,6 +26,7 @@ public class DrawMesh : MonoBehaviour {
     }
     private void Start()
     {
+       
         strokePixelsX.Clear();
         strokePixelsY.Clear();
         strokePixelsXY.Clear();
@@ -66,6 +67,13 @@ public class DrawMesh : MonoBehaviour {
             firstClick = true;
            DrawingToJson.instance.mousePosition[0] =Mathf.Abs(Mathf.Floor(getPoistionOnDrawArea().x*10));
             DrawingToJson.instance.mousePosition[1] =Mathf.Abs(Mathf.Floor(getPoistionOnDrawArea().y*10));
+            if(DrawingToJson.instance.canUpdateMinMax)
+            {
+                DrawingToJson.instance.canUpdateMinMax = false;
+                DrawingToJson.instance.minx = DrawingToJson.instance.max = ObjectManager.instance.realDrawingArea.transform.InverseTransformPoint(getMouseWorlPosition()).x;
+                DrawingToJson.instance.miny = DrawingToJson.instance.maxy = ObjectManager.instance.realDrawingArea.transform.InverseTransformPoint(getMouseWorlPosition()).y;
+
+            }
             Vector3[] vertices = new Vector3[4];
             Vector2[] uv = new Vector2[4];
             int[] triangles = new int[6];
@@ -74,8 +82,8 @@ public class DrawMesh : MonoBehaviour {
             vertices[1] = getMouseWorlPosition();
             vertices[2] = getMouseWorlPosition();
             vertices[3] = getMouseWorlPosition();
-            minx = max = ObjectManager.instance.realDrawingArea.transform.InverseTransformPoint(getMouseWorlPosition()).x;
-            miny = maxy = ObjectManager.instance.realDrawingArea.transform.InverseTransformPoint(getMouseWorlPosition()).y;
+           // minx = max = ObjectManager.instance.realDrawingArea.transform.InverseTransformPoint(getMouseWorlPosition()).x;
+           // miny = maxy = ObjectManager.instance.realDrawingArea.transform.InverseTransformPoint(getMouseWorlPosition()).y;
 
             uv[0] = Vector2.zero;
             uv[1] = Vector2.zero;
@@ -125,28 +133,37 @@ public class DrawMesh : MonoBehaviour {
                    
                     point = ObjectManager.instance.realDrawingArea.transform.InverseTransformPoint(getMouseWorlPosition());
                     
-                    indexOfPoint++;
+                   
                    
                   
 
-                    if (point.x < minx)
+                    if (point.x < DrawingToJson.instance.minx)
                     {
-                        minx = point.x;
+                        DrawingToJson.instance.minx = point.x;
+                        DrawingToJson.instance.indexOfMinX = DrawingToJson.instance.imagePoints.Count;
+
+                    }
+                    if (point.x >= DrawingToJson.instance.max)
+                    {
+                        DrawingToJson.instance.max = point.x;
+                        DrawingToJson.instance.indexOfMaxX = DrawingToJson.instance.imagePoints.Count;
+
+                    }
+
+
+                    if (point.y < DrawingToJson.instance.miny)
+                    {
+                        DrawingToJson.instance.miny = point.y;
+                        DrawingToJson.instance.indexOfMinY = DrawingToJson.instance.imagePoints.Count;
+                    }
+                    if (point.y >= DrawingToJson.instance.maxy)
+                    {
+                        DrawingToJson.instance.maxy = point.y;
+                        DrawingToJson.instance.indexOfMaxY = DrawingToJson.instance.imagePoints.Count;
                        
                     }
-                    if (point.x >= max)
-                    {
-                        max = point.x;
-                        DrawingToJson.instance.indexOfMaxX = indexOfPoint;
-                    }
-
-                  
-                    if (point.y < miny)
-                        miny = point.y;
-                    if (point.y >= maxy)
-                        maxy = point.y;
                     DrawingToJson.instance.imagePoints.Add(point);
-                   
+                    indexOfPoint++;
                     // Debug.Log(getPoistionOnDrawArea());
 
                     mesh.vertices.CopyTo(vertices, 0);
@@ -192,13 +209,16 @@ public class DrawMesh : MonoBehaviour {
         else if(canvasFull)
         {
             canDraw = false;
+                //calculatMax And Min
+
+
                 strokePixelsXY.Add(strokePixelsX);
                 strokePixelsXY.Add(strokePixelsY);
                 DrawingToJson.instance.imageStrokes.Add(strokePixelsXY);
-                DrawingToJson.instance.max = max;
-                DrawingToJson.instance.minx = minx;
-                DrawingToJson.instance.maxy = maxy;
-                DrawingToJson.instance.miny = miny;
+                //DrawingToJson.instance.max = max;
+                //DrawingToJson.instance.minx = minx;
+                //DrawingToJson.instance.maxy = maxy;
+                //DrawingToJson.instance.miny = miny;
                 strokeCreated = true;
             }
     }

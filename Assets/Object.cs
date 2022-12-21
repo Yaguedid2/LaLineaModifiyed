@@ -17,9 +17,24 @@ public class Object : MonoBehaviour
     {
         
     }
+    bool oneTime = true;
     private void OnCollisionEnter(Collision collision)
     {
+        if (oneTime)
+        {
+            oneTime = false;
+            StartCoroutine(freeze());
+        }
+       
+    }
+    IEnumerator freeze()
+    {
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        yield return new WaitForSeconds(0.5f);
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ;
+       
+
     }
     public void setClassName(string type)
     {

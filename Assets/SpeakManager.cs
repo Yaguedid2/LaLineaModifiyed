@@ -37,6 +37,7 @@ public class SpeakManager : MonoBehaviour
     IEnumerator generateText( )
     {
         isPrinting = true;
+       
         float _timeBetweenWords;
         if (persTimeBetweenWords == 0)
             _timeBetweenWords = timeBetweenWords;
@@ -45,6 +46,7 @@ public class SpeakManager : MonoBehaviour
         if (splitPhrase)
         {
             string[] words = whatToSay[0].Split(' ');
+            whatToSay.RemoveAt(0);
             for (int i = 0; i < words.Length; i++)
             {
                 Vector2 headPosition = new Vector2(player.GetComponent<Collider>().bounds.size.x + player.transform.position.x, player.transform.position.y + player.GetComponent<Collider>().bounds.size.y);
@@ -58,11 +60,15 @@ public class SpeakManager : MonoBehaviour
                 t.text = words[i];
                 yield return new WaitForSeconds(_timeBetweenWords);
                 t.GetComponent<Rigidbody>().velocity = new Vector3(0, 1, 0);
+               
                 Destroy(t.gameObject, _timeBetweenWords );
-                yield return new WaitForSeconds(_timeBetweenWords);
+               
 
             }
-        }else
+           
+            isPrinting = false;
+        }
+        else
         {
             Vector2 headPosition = new Vector2(player.GetComponent<Collider>().bounds.size.x + player.transform.position.x, player.transform.position.y + player.GetComponent<Collider>().bounds.size.y);
             //Debug.Log(headPosition);
@@ -72,13 +78,15 @@ public class SpeakManager : MonoBehaviour
             TextMeshPro t = Instantiate(text);
             t.transform.position = new Vector3(headPosition.x - offsetX, headPosition.y - offsetY, -8.85f);
             t.text = whatToSay[0];
+            whatToSay.RemoveAt(0);
             t.GetComponent<Rigidbody>().velocity = new Vector3(0, 1, 0);
             Destroy(t.gameObject, _timeBetweenWords / 2);
             yield return new WaitForSeconds(_timeBetweenWords);
+            
+            isPrinting = false;
         }
             
-            whatToSay.RemoveAt(0);
-        isPrinting = false;
+          
             
       
 

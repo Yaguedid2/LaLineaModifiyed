@@ -699,7 +699,7 @@ MonoBehaviour:
   - className: The Eiffel Tower
     index: 0
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -717,10 +717,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: The Great Wall of China
     index: 1
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -738,10 +739,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: The Mona Lisa
     index: 2
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -759,10 +761,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: aircraft carrier
     index: 3
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -780,10 +783,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: airplane
     index: 4
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -801,10 +805,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: alarm clock
     index: 5
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -822,10 +827,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: ambulance
     index: 6
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -842,11 +848,12 @@ MonoBehaviour:
       sitDown: 0
       book: 0
       animalRide: 0
-      drive: 0
+      drive: 1
+      pray: 0
   - className: angel
     index: 7
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -864,10 +871,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: animal migration
     index: 8
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -885,6 +893,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: ant
     index: 9
     objectCategories:
@@ -906,10 +915,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: anvil
     index: 10
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -927,6 +937,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: apple
     index: 11
     objectCategories:
@@ -936,7 +947,7 @@ MonoBehaviour:
       ride: 0
       faith: 0
       afraid: 0
-      eat: 0
+      eat: 1
       shoot: 0
       axe: 0
       backpack: 0
@@ -948,6 +959,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: arm
     index: 12
     objectCategories:
@@ -969,10 +981,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: asparagus
     index: 13
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -990,6 +1003,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: axe
     index: 14
     objectCategories:
@@ -1011,6 +1025,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: backpack
     index: 15
     objectCategories:
@@ -1032,6 +1047,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: banana
     index: 16
     objectCategories:
@@ -1053,6 +1069,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bandage
     index: 17
     objectCategories:
@@ -1074,10 +1091,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: barn
     index: 18
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1087,7 +1105,7 @@ MonoBehaviour:
       shoot: 0
       axe: 0
       backpack: 0
-      enter: 0
+      enter: 1
       sleep: 0
       basket: 0
       bed: 0
@@ -1095,6 +1113,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: baseball
     index: 19
     objectCategories:
@@ -1116,10 +1135,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: baseball bat
     index: 20
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1137,6 +1157,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: basket
     index: 21
     objectCategories:
@@ -1158,10 +1179,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: basketball
     index: 22
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1179,10 +1201,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bat
     index: 23
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1200,10 +1223,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bathtub
     index: 24
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1221,10 +1245,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: beach
     index: 25
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1242,10 +1267,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bear
     index: 26
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1263,10 +1289,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: beard
     index: 27
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1284,10 +1311,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bed
     index: 28
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1305,6 +1333,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bee
     index: 29
     objectCategories:
@@ -1326,6 +1355,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: belt
     index: 30
     objectCategories:
@@ -1347,10 +1377,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bench
     index: 31
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1368,10 +1399,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bicycle
     index: 32
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1389,10 +1421,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: binoculars
     index: 33
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1410,6 +1443,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bird
     index: 34
     objectCategories:
@@ -1431,6 +1465,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: birthday cake
     index: 35
     objectCategories:
@@ -1452,10 +1487,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: blackberry
     index: 36
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1473,6 +1509,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: blueberry
     index: 37
     objectCategories:
@@ -1482,7 +1519,7 @@ MonoBehaviour:
       ride: 0
       faith: 0
       afraid: 0
-      eat: 0
+      eat: 1
       shoot: 0
       axe: 0
       backpack: 0
@@ -1494,6 +1531,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: book
     index: 38
     objectCategories:
@@ -1515,10 +1553,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: boomerang
     index: 39
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1536,6 +1575,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bottlecap
     index: 40
     objectCategories:
@@ -1557,10 +1597,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bowtie
     index: 41
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1578,6 +1619,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bracelet
     index: 42
     objectCategories:
@@ -1599,10 +1641,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: brain
     index: 43
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1620,10 +1663,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bread
     index: 44
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1641,10 +1685,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bridge
     index: 45
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1662,6 +1707,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: broccoli
     index: 46
     objectCategories:
@@ -1683,10 +1729,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: broom
     index: 47
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1704,6 +1751,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bucket
     index: 48
     objectCategories:
@@ -1725,10 +1773,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bulldozer
     index: 49
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1746,10 +1795,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bus
     index: 50
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1767,10 +1817,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: bush
     index: 51
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1788,6 +1839,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: butterfly
     index: 52
     objectCategories:
@@ -1809,6 +1861,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: cactus
     index: 53
     objectCategories:
@@ -1830,6 +1883,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: cake
     index: 54
     objectCategories:
@@ -1851,6 +1905,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: calculator
     index: 55
     objectCategories:
@@ -1872,10 +1927,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: calendar
     index: 56
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1893,10 +1949,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: camel
     index: 57
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1914,10 +1971,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: camera
     index: 58
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1935,10 +1993,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: camouflage
     index: 59
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1956,10 +2015,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: campfire
     index: 60
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -1977,6 +2037,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: candle
     index: 61
     objectCategories:
@@ -1998,10 +2059,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: cannon
     index: 62
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2019,10 +2081,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: canoe
     index: 63
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2040,10 +2103,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: car
     index: 64
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2061,6 +2125,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: carrot
     index: 65
     objectCategories:
@@ -2082,10 +2147,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: castle
     index: 66
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2103,6 +2169,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: cat
     index: 67
     objectCategories:
@@ -2124,10 +2191,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: ceiling fan
     index: 68
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2145,6 +2213,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: cell phone
     index: 69
     objectCategories:
@@ -2166,10 +2235,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: cello
     index: 70
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2187,10 +2257,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: chair
     index: 71
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2208,10 +2279,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: chandelier
     index: 72
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2229,10 +2301,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: church
     index: 73
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2242,7 +2315,7 @@ MonoBehaviour:
       shoot: 0
       axe: 0
       backpack: 0
-      enter: 0
+      enter: 1
       sleep: 0
       basket: 0
       bed: 0
@@ -2250,10 +2323,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 1
   - className: circle
     index: 74
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2263,7 +2337,7 @@ MonoBehaviour:
       shoot: 0
       axe: 0
       backpack: 0
-      enter: 0
+      enter: 1
       sleep: 0
       basket: 0
       bed: 0
@@ -2271,10 +2345,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: clarinet
     index: 75
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2292,10 +2367,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: clock
     index: 76
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2313,10 +2389,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: cloud
     index: 77
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2334,6 +2411,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: coffee cup
     index: 78
     objectCategories:
@@ -2355,6 +2433,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: compass
     index: 79
     objectCategories:
@@ -2376,6 +2455,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: computer
     index: 80
     objectCategories:
@@ -2397,6 +2477,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: cookie
     index: 81
     objectCategories:
@@ -2418,10 +2499,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: cooler
     index: 82
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2439,10 +2521,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: couch
     index: 83
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2460,10 +2543,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: cow
     index: 84
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2481,10 +2565,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: crab
     index: 85
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2502,10 +2587,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: crayon
     index: 86
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2523,10 +2609,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: crocodile
     index: 87
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2544,10 +2631,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: crown
     index: 88
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2565,10 +2653,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: cruise ship
     index: 89
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2586,10 +2675,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: cup
     index: 90
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2607,6 +2697,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: diamond
     index: 91
     objectCategories:
@@ -2628,10 +2719,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: dishwasher
     index: 92
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2649,10 +2741,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: diving board
     index: 93
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2670,10 +2763,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: dog
     index: 94
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2691,10 +2785,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: dolphin
     index: 95
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2712,6 +2807,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: donut
     index: 96
     objectCategories:
@@ -2733,10 +2829,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: door
     index: 97
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2754,10 +2851,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: dragon
     index: 98
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2775,10 +2873,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: dresser
     index: 99
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2796,6 +2895,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: drill
     index: 100
     objectCategories:
@@ -2817,10 +2917,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: drums
     index: 101
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2838,10 +2939,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: duck
     index: 102
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2859,10 +2961,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: dumbbell
     index: 103
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2880,10 +2983,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: ear
     index: 104
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2901,10 +3005,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: elbow
     index: 105
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2922,10 +3027,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: elephant
     index: 106
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -2943,6 +3049,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: envelope
     index: 107
     objectCategories:
@@ -2964,6 +3071,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: eraser
     index: 108
     objectCategories:
@@ -2985,10 +3093,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: eye
     index: 109
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3006,10 +3115,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: eyeglasses
     index: 110
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3027,10 +3137,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: face
     index: 111
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3048,10 +3159,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: fan
     index: 112
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3069,10 +3181,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: feather
     index: 113
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3090,10 +3203,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: fence
     index: 114
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3111,10 +3225,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: finger
     index: 115
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3132,10 +3247,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: fire hydrant
     index: 116
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3153,10 +3269,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: fireplace
     index: 117
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3174,10 +3291,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: firetruck
     index: 118
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3194,7 +3312,8 @@ MonoBehaviour:
       sitDown: 0
       book: 0
       animalRide: 0
-      drive: 0
+      drive: 1
+      pray: 0
   - className: fish
     index: 119
     objectCategories:
@@ -3216,10 +3335,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: flamingo
     index: 120
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3237,6 +3357,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: flashlight
     index: 121
     objectCategories:
@@ -3258,10 +3379,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: flip flops
     index: 122
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3279,10 +3401,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: floor lamp
     index: 123
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3300,6 +3423,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: flower
     index: 124
     objectCategories:
@@ -3321,10 +3445,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: flying saucer
     index: 125
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3342,10 +3467,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: foot
     index: 126
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3363,6 +3489,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: fork
     index: 127
     objectCategories:
@@ -3384,6 +3511,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: frog
     index: 128
     objectCategories:
@@ -3405,10 +3533,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: frying pan
     index: 129
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3426,10 +3555,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: garden
     index: 130
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3447,10 +3577,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: garden hose
     index: 131
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3468,10 +3599,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: giraffe
     index: 132
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3489,10 +3621,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: goatee
     index: 133
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3510,10 +3643,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: golf club
     index: 134
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3531,10 +3665,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: grapes
     index: 135
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3552,10 +3687,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: grass
     index: 136
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3573,6 +3709,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: guitar
     index: 137
     objectCategories:
@@ -3594,6 +3731,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: hamburger
     index: 138
     objectCategories:
@@ -3615,6 +3753,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: hammer
     index: 139
     objectCategories:
@@ -3636,10 +3775,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: hand
     index: 140
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3657,10 +3797,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: harp
     index: 141
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3678,6 +3819,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: hat
     index: 142
     objectCategories:
@@ -3699,6 +3841,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: headphones
     index: 143
     objectCategories:
@@ -3720,10 +3863,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: hedgehog
     index: 144
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3741,10 +3885,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: helicopter
     index: 145
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3762,6 +3907,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: helmet
     index: 146
     objectCategories:
@@ -3783,10 +3929,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: hexagon
     index: 147
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3804,10 +3951,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: hockey puck
     index: 148
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3825,10 +3973,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: hockey stick
     index: 149
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3846,10 +3995,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: horse
     index: 150
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3867,10 +4017,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: hospital
     index: 151
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3880,18 +4031,19 @@ MonoBehaviour:
       shoot: 0
       axe: 0
       backpack: 0
-      enter: 0
-      sleep: 0
+      enter: 1
+      sleep: 1
       basket: 0
       bed: 0
       sitDown: 0
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: hot air balloon
     index: 152
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3909,6 +4061,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: hot dog
     index: 153
     objectCategories:
@@ -3930,10 +4083,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: hot tub
     index: 154
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3951,10 +4105,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: hourglass
     index: 155
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3972,10 +4127,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: house
     index: 156
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -3985,18 +4141,19 @@ MonoBehaviour:
       shoot: 0
       axe: 0
       backpack: 0
-      enter: 0
-      sleep: 0
+      enter: 1
+      sleep: 1
       basket: 0
       bed: 0
       sitDown: 0
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: house plant
     index: 157
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4014,10 +4171,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: hurricane
     index: 158
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4035,6 +4193,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: ice cream
     index: 159
     objectCategories:
@@ -4056,6 +4215,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: jacket
     index: 160
     objectCategories:
@@ -4077,10 +4237,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: jail
     index: 161
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4098,10 +4259,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: kangaroo
     index: 162
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4119,6 +4281,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: key
     index: 163
     objectCategories:
@@ -4140,10 +4303,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: keyboard
     index: 164
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4161,10 +4325,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: knee
     index: 165
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4182,6 +4347,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: knife
     index: 166
     objectCategories:
@@ -4203,10 +4369,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: ladder
     index: 167
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4224,10 +4391,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: lantern
     index: 168
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4245,10 +4413,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: laptop
     index: 169
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4266,10 +4435,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: leaf
     index: 170
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4287,10 +4457,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: leg
     index: 171
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4308,10 +4479,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: light bulb
     index: 172
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4329,10 +4501,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: lighter
     index: 173
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4350,10 +4523,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: lighthouse
     index: 174
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4371,10 +4545,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: lightning
     index: 175
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4392,10 +4567,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: line
     index: 176
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4413,10 +4589,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: lion
     index: 177
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4434,10 +4611,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: lipstick
     index: 178
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4455,10 +4633,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: lobster
     index: 179
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4476,10 +4655,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: lollipop
     index: 180
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4497,10 +4677,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: mailbox
     index: 181
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4518,10 +4699,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: map
     index: 182
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4539,10 +4721,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: marker
     index: 183
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4560,10 +4743,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: matches
     index: 184
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4581,10 +4765,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: megaphone
     index: 185
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4602,10 +4787,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: mermaid
     index: 186
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4623,10 +4809,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: microphone
     index: 187
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4644,10 +4831,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: microwave
     index: 188
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4665,10 +4853,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: monkey
     index: 189
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4686,10 +4875,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: moon
     index: 190
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4707,6 +4897,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: mosquito
     index: 191
     objectCategories:
@@ -4728,10 +4919,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: motorbike
     index: 192
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4749,10 +4941,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: mountain
     index: 193
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4770,6 +4963,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: mouse
     index: 194
     objectCategories:
@@ -4791,10 +4985,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: moustache
     index: 195
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4812,10 +5007,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: mouth
     index: 196
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4833,6 +5029,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: mug
     index: 197
     objectCategories:
@@ -4854,6 +5051,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: mushroom
     index: 198
     objectCategories:
@@ -4875,10 +5073,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: nail
     index: 199
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4896,10 +5095,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: necklace
     index: 200
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4917,10 +5117,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: nose
     index: 201
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4938,10 +5139,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: ocean
     index: 202
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4959,10 +5161,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: octagon
     index: 203
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -4980,10 +5183,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: octopus
     index: 204
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5001,6 +5205,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: onion
     index: 205
     objectCategories:
@@ -5022,10 +5227,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: oven
     index: 206
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5043,10 +5249,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: owl
     index: 207
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5064,10 +5271,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: paint can
     index: 208
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5085,10 +5293,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: paintbrush
     index: 209
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5106,10 +5315,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: palm tree
     index: 210
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5127,10 +5337,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: panda
     index: 211
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5148,6 +5359,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: pants
     index: 212
     objectCategories:
@@ -5169,6 +5381,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: paper clip
     index: 213
     objectCategories:
@@ -5190,10 +5403,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: parachute
     index: 214
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5211,10 +5425,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: parrot
     index: 215
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5232,10 +5447,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: passport
     index: 216
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5253,10 +5469,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: peanut
     index: 217
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5274,6 +5491,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: pear
     index: 218
     objectCategories:
@@ -5283,7 +5501,7 @@ MonoBehaviour:
       ride: 0
       faith: 0
       afraid: 0
-      eat: 0
+      eat: 1
       shoot: 0
       axe: 0
       backpack: 0
@@ -5295,10 +5513,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: peas
     index: 219
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5316,6 +5535,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: pencil
     index: 220
     objectCategories:
@@ -5337,10 +5557,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: penguin
     index: 221
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5358,10 +5579,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: piano
     index: 222
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5379,10 +5601,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: pickup truck
     index: 223
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5400,10 +5623,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: picture frame
     index: 224
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5421,10 +5645,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: pig
     index: 225
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5442,6 +5667,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: pillow
     index: 226
     objectCategories:
@@ -5463,6 +5689,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: pineapple
     index: 227
     objectCategories:
@@ -5484,6 +5711,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: pizza
     index: 228
     objectCategories:
@@ -5505,10 +5733,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: pliers
     index: 229
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5526,10 +5755,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: police car
     index: 230
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5547,10 +5777,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: pond
     index: 231
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5568,10 +5799,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: pool
     index: 232
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5589,10 +5821,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: popsicle
     index: 233
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5610,10 +5843,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: postcard
     index: 234
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5631,6 +5865,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: potato
     index: 235
     objectCategories:
@@ -5652,10 +5887,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: power outlet
     index: 236
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5673,6 +5909,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: purse
     index: 237
     objectCategories:
@@ -5694,6 +5931,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: rabbit
     index: 238
     objectCategories:
@@ -5715,10 +5953,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: raccoon
     index: 239
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5736,10 +5975,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: radio
     index: 240
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5757,10 +5997,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: rain
     index: 241
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5778,10 +6019,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: rainbow
     index: 242
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5799,10 +6041,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: rake
     index: 243
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5820,10 +6063,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: remote control
     index: 244
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5841,10 +6085,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: rhinoceros
     index: 245
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5862,10 +6107,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: rifle
     index: 246
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5883,10 +6129,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: river
     index: 247
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5904,10 +6151,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: roller coaster
     index: 248
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5925,10 +6173,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: rollerskates
     index: 249
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5946,10 +6195,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: sailboat
     index: 250
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5967,10 +6217,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: sandwich
     index: 251
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -5988,10 +6239,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: saw
     index: 252
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6009,10 +6261,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: saxophone
     index: 253
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6030,10 +6283,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: school bus
     index: 254
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6051,10 +6305,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: scissors
     index: 255
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6072,10 +6327,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: scorpion
     index: 256
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6093,10 +6349,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: screwdriver
     index: 257
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6114,10 +6371,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: sea turtle
     index: 258
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6135,10 +6393,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: see saw
     index: 259
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6156,10 +6415,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: shark
     index: 260
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6177,10 +6437,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: sheep
     index: 261
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6198,10 +6459,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: shoe
     index: 262
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6219,10 +6481,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: shorts
     index: 263
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6240,10 +6503,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: shovel
     index: 264
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6261,10 +6525,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: sink
     index: 265
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6282,10 +6547,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: skateboard
     index: 266
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6303,10 +6569,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: skull
     index: 267
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6324,10 +6591,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: skyscraper
     index: 268
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6345,10 +6613,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: sleeping bag
     index: 269
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6366,10 +6635,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: smiley face
     index: 270
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6387,10 +6657,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: snail
     index: 271
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6408,10 +6679,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: snake
     index: 272
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6429,10 +6701,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: snorkel
     index: 273
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6450,10 +6723,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: snowflake
     index: 274
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6471,10 +6745,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: snowman
     index: 275
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6492,10 +6767,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: soccer ball
     index: 276
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6513,10 +6789,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: sock
     index: 277
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6534,10 +6811,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: speedboat
     index: 278
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6555,10 +6833,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: spider
     index: 279
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6576,10 +6855,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: spoon
     index: 280
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6597,10 +6877,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: spreadsheet
     index: 281
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6618,10 +6899,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: square
     index: 282
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6639,10 +6921,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: squiggle
     index: 283
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6660,10 +6943,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: squirrel
     index: 284
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6681,10 +6965,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: stairs
     index: 285
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6702,10 +6987,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: star
     index: 286
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6723,10 +7009,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: steak
     index: 287
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6744,10 +7031,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: stereo
     index: 288
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6765,10 +7053,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: stethoscope
     index: 289
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6786,10 +7075,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: stitches
     index: 290
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6807,10 +7097,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: stop sign
     index: 291
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6828,10 +7119,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: stove
     index: 292
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6849,10 +7141,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: strawberry
     index: 293
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6870,10 +7163,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: streetlight
     index: 294
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6891,10 +7185,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: string bean
     index: 295
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6912,10 +7207,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: submarine
     index: 296
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6933,10 +7229,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: suitcase
     index: 297
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6954,10 +7251,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: sun
     index: 298
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6975,10 +7273,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: swan
     index: 299
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -6996,10 +7295,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: sweater
     index: 300
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7017,10 +7317,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: swing set
     index: 301
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7038,10 +7339,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: sword
     index: 302
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7059,10 +7361,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: syringe
     index: 303
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7080,10 +7383,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: t-shirt
     index: 304
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7101,10 +7405,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: table
     index: 305
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7122,10 +7427,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: teapot
     index: 306
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7143,10 +7449,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: teddy-bear
     index: 307
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7164,10 +7471,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: telephone
     index: 308
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7185,10 +7493,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: television
     index: 309
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7206,10 +7515,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: tennis racquet
     index: 310
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7227,10 +7537,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: tent
     index: 311
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7240,18 +7551,19 @@ MonoBehaviour:
       shoot: 0
       axe: 0
       backpack: 0
-      enter: 0
-      sleep: 0
+      enter: 1
+      sleep: 1
       basket: 0
       bed: 0
       sitDown: 0
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: tiger
     index: 312
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7269,10 +7581,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: toaster
     index: 313
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7290,10 +7603,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: toe
     index: 314
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7311,10 +7625,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: toilet
     index: 315
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7332,10 +7647,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: tooth
     index: 316
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7353,10 +7669,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: toothbrush
     index: 317
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7374,10 +7691,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: toothpaste
     index: 318
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7395,10 +7713,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: tornado
     index: 319
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7416,10 +7735,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: tractor
     index: 320
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7437,10 +7757,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: traffic light
     index: 321
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7458,10 +7779,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: train
     index: 322
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7478,11 +7800,12 @@ MonoBehaviour:
       sitDown: 0
       book: 0
       animalRide: 0
-      drive: 0
+      drive: 1
+      pray: 0
   - className: tree
     index: 323
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7500,10 +7823,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: triangle
     index: 324
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7521,10 +7845,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: trombone
     index: 325
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7542,10 +7867,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: truck
     index: 326
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7562,11 +7888,12 @@ MonoBehaviour:
       sitDown: 0
       book: 0
       animalRide: 0
-      drive: 0
+      drive: 1
+      pray: 0
   - className: trumpet
     index: 327
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7584,10 +7911,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: umbrella
     index: 328
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7605,10 +7933,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: underwear
     index: 329
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7626,10 +7955,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: van
     index: 330
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7647,10 +7977,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: vase
     index: 331
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7668,10 +7999,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: violin
     index: 332
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7689,10 +8021,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: washing machine
     index: 333
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7710,10 +8043,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: watermelon
     index: 334
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7731,10 +8065,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: waterslide
     index: 335
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7752,10 +8087,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: whale
     index: 336
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7773,10 +8109,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: wheel
     index: 337
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7794,10 +8131,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: windmill
     index: 338
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7815,10 +8153,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: wine bottle
     index: 339
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7836,10 +8175,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: wine glass
     index: 340
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7857,10 +8197,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: wristwatch
     index: 341
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7878,10 +8219,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: yoga
     index: 342
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7899,10 +8241,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: zebra
     index: 343
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7920,10 +8263,11 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
   - className: zigzag
     index: 344
     objectCategories:
-      bigSize: 0
+      bigSize: 1
       admire: 1
       fly: 0
       ride: 0
@@ -7941,6 +8285,7 @@ MonoBehaviour:
       book: 0
       animalRide: 0
       drive: 0
+      pray: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -8014,7 +8359,7 @@ Camera:
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 311
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -8034,7 +8379,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4919252, y: -0.53720045, z: -10.7}
+  m_LocalPosition: {x: 1.4947557, y: -0.53720045, z: -10.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1154890948}
@@ -10727,6 +11072,7 @@ MonoBehaviour:
   errorMessage: {fileID: 7992067800280524581, guid: 86e75069165e8a24dbe5784ea85bbffc,
     type: 3}
   canvas: {fileID: 666312138}
+  handImage: {fileID: 835814847}
 --- !u!1 &1435892029
 GameObject:
   m_ObjectHideFlags: 0
@@ -11354,7 +11700,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7789474, y: 1}
+    m_SensorSize: {x: 1.778169, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -11371,7 +11717,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678220634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4919252, y: -0.53720045, z: -10.7}
+  m_LocalPosition: {x: 1.4947557, y: -0.53720045, z: -10.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2095476053}
@@ -11653,8 +11999,11 @@ MonoBehaviour:
   maxy: 0
   indexOfMaxX: 0
   indexOfMinX: 0
+  indexOfMaxY: 0
+  indexOfMinY: 0
   imagePoints: []
   strokeIndexes: 
+  canUpdateMinMax: 1
 --- !u!1 &1991822606
 GameObject:
   m_ObjectHideFlags: 0
@@ -11909,6 +12258,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596457, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8366489418183596450, guid: 2c05cbcd07612ee49922767d78732b2e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11969,6 +12323,11 @@ PrefabInstance:
       propertyPath: whereToSee
       value: 
       objectReference: {fileID: 1345651056}
+    - target: {fileID: 8366489418183596462, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: hand
+      value: 
+      objectReference: {fileID: 7045748333643041456}
     - target: {fileID: 8366489418183596454, guid: 2c05cbcd07612ee49922767d78732b2e,
         type: 3}
       propertyPath: stepsText
@@ -12008,6 +12367,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: mouth
+      objectReference: {fileID: 0}
+    - target: {fileID: 4463127266121247304, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3155435187054817934, guid: 2c05cbcd07612ee49922767d78732b2e,
         type: 3}
@@ -12130,8 +12494,214 @@ PrefabInstance:
       propertyPath: m_WorldVelocityScale
       value: -0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 1575198891172031667, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575198891945642873, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596451, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596451, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596459, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596459, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596453, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575198891167311422, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596455, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596449, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596469, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596471, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596463, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596485, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596487, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596461, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596493, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596495, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596503, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706876360544877048, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036075956690545304, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366358621140770452, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596481, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596483, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596505, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7890184585335330871, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596473, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596475, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596507, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596509, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596489, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596491, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596465, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596467, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596499, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596501, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596477, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596479, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596497, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366489418183596511, guid: 2c05cbcd07612ee49922767d78732b2e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c05cbcd07612ee49922767d78732b2e, type: 3}
+--- !u!4 &7045748333643041456 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8366489418183362027, guid: 2c05cbcd07612ee49922767d78732b2e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1575198891601186651}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7045748333643536121 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8366489418183596450, guid: 2c05cbcd07612ee49922767d78732b2e,

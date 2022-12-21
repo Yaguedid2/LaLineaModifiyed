@@ -23,10 +23,10 @@ public class LineManager : MonoBehaviour
      void Start()
     {
         //edgeOfline = 2;
-        drawLine(true);
+        drawLine(true,30);
     }
     bool firstTime = true;
-    public void drawLine(bool firstTime)
+    public void drawLine(bool firstTime,float distance)
     {
         
         if (firstTime)
@@ -62,9 +62,9 @@ public class LineManager : MonoBehaviour
              y = Random.Range(-10f, 10f);
             else
               y = Random.Range(-2f, 2f);
-            l.GetComponent<LineRenderer>().SetPosition(1, start-new Vector3(10, 0, y));
-            l.GetComponent<LineRenderer>().SetPosition(2, start - new Vector3(20, 0, y));
-            l.GetComponent<LineRenderer>().SetPosition(3, start - new Vector3(30, 0, y));
+            l.GetComponent<LineRenderer>().SetPosition(1, start-new Vector3(distance/3, 0, y));
+            l.GetComponent<LineRenderer>().SetPosition(2, start - new Vector3(distance/2, 0, y));
+            l.GetComponent<LineRenderer>().SetPosition(3, start - new Vector3(distance, 0, y));
 
            
             line = l.GetComponent<LineRenderer>();

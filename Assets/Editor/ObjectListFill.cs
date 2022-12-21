@@ -15,7 +15,7 @@ public class ObjectListFill : EditorWindow
     }
     private void OnGUI()
     {
-        age = EditorGUILayout.FloatField("age", age);
+      
         objectTypeHandler = EditorGUILayout.ObjectField("obj", objectTypeHandler, typeof(GameObject), true) as GameObject;
         if (GUILayout.Button("show"))
             {
@@ -24,6 +24,10 @@ public class ObjectListFill : EditorWindow
         if (GUILayout.Button("checkAdmireForAll"))
         {
             checkAProprtyForAllAbject();
+        }
+        if (GUILayout.Button("checkBigSizeForAll"))
+        {
+            checkBigSizeForAll();
         }
     }
     void loopOnLabels()
@@ -42,5 +46,13 @@ public class ObjectListFill : EditorWindow
 
         }
     }
-   
+    void checkBigSizeForAll()
+    {
+        for (int i = 0; i < Labels.LABELS.Length; i++)
+        {
+            objectTypeHandler.GetComponent<ObjectTypeHandler>().objects[i].objectCategories.bigSize = true;
+
+        }
+    }
+
 }

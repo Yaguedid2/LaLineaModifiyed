@@ -43,6 +43,7 @@ public class ObjectManager : MonoBehaviour
         image.name = "Object";
         drawingTransform = image.transform;
         image.transform.position =new Vector3(realDrawingArea.transform.position.x, realDrawingArea.transform.position.y,0);    
+
         //image.AddComponent<EdgeCollider2D>();
         //build road to walk on
         
@@ -53,22 +54,24 @@ public class ObjectManager : MonoBehaviour
         line.transform.parent = image.transform;
         line.AddComponent<LineRenderer>();
        
-       
-       for(int c=1;c< DrawingToJson.instance.strokeIndexes.Count;c++)
+
+        for (int c=1;c< DrawingToJson.instance.strokeIndexes.Count;c++)
         {
             GameObject subLine = new GameObject();
             subLine.name = "subLine";
             subLine.transform.parent = image.transform;
             subLine.AddComponent<LineRenderer>();
+            
             subLine.GetComponent<LineRenderer>().useWorldSpace = false;
             subLine.GetComponent<LineRenderer>().material = lineDrawingMaterial;
-            subLine.GetComponent<LineRenderer>().startWidth = 0.2f;
+           
             if (c< DrawingToJson.instance.strokeIndexes.Count-1)
             subLine.GetComponent<LineRenderer>().positionCount = DrawingToJson.instance.strokeIndexes[c+1]- DrawingToJson.instance.strokeIndexes[c];
             else
                 subLine.GetComponent<LineRenderer>().positionCount =  DrawingToJson.instance.strokeIndexes[c];
         }
         line.GetComponent<LineRenderer>().positionCount = DrawingToJson.instance.strokeIndexes[1];
+       
         int counter = 0;
         int indexOfStroke = 1;
         int positionInStroke = 0;
@@ -91,12 +94,15 @@ public class ObjectManager : MonoBehaviour
             imagepoint.tag = "imagePoint";
             imagepoint.transform.localPosition = point;
             listOfImagePointsToWalkOn.Add(imagepoint);
+            if (drawLine)
+                image.GetComponentsInChildren<LineRenderer>()[indexOfStroke - 1].startWidth = 0.8f;
+            else
+                image.GetComponentsInChildren<LineRenderer>()[indexOfStroke - 1].startWidth = 0.3f;
             image.GetComponentsInChildren<LineRenderer>()[indexOfStroke-1].SetPosition(positionInStroke,imagepoint.transform.position);
 
             line.GetComponent<LineRenderer>().useWorldSpace = false;
             line.GetComponent<LineRenderer>().material = lineDrawingMaterial;
-            line.GetComponent<LineRenderer>().startWidth = 0.2f;
-            i++;
+           
             positionInStroke++;
             counter++;
         }
@@ -111,10 +117,29 @@ public class ObjectManager : MonoBehaviour
 
         leftCorner.transform.parent = image.transform;
         GameObject rightCorner = new GameObject();
+        
+
         rightCorner.transform.parent = image.transform;
         leftCorner.name = "leftCorner";
 
         rightCorner.name = "rightCorner";
+        GameObject top = new GameObject();
+        top.name = "top";
+        top.transform.parent = image.transform;
+        top.transform.localPosition = DrawingToJson.instance.imagePoints.ToArray()[DrawingToJson.instance.indexOfMaxY];
+        GameObject realRight = new GameObject();
+        realRight.name = "realRight";
+        realRight.transform.parent = image.transform;
+        realRight.transform.localPosition = DrawingToJson.instance.imagePoints.ToArray()[DrawingToJson.instance.indexOfMaxX];
+        GameObject realLeft = new GameObject();
+        realLeft.name = "realLeft";
+        realLeft.transform.parent = image.transform;
+        realLeft.transform.localPosition = DrawingToJson.instance.imagePoints.ToArray()[DrawingToJson.instance.indexOfMinX];
+        GameObject bottom = new GameObject();
+        bottom.name = "bottom";
+        bottom.transform.parent = image.transform;
+        bottom.transform.localPosition = DrawingToJson.instance.imagePoints.ToArray()[DrawingToJson.instance.indexOfMinY];
+
         if (DrawingToJson.instance.imagePoints.ToArray()[0].x< DrawingToJson.instance.imagePoints.ToArray()[DrawingToJson.instance.imagePoints.ToArray().Length - 1].x)
         {
             leftCorner.transform.localPosition = DrawingToJson.instance.imagePoints.ToArray()[0];
@@ -128,7 +153,7 @@ public class ObjectManager : MonoBehaviour
             listOfImagePointsToWalkOn.Reverse();
         }     
              
-       image.transform.localScale = new Vector3(10, 10, 1);
+       image.transform.localScale = new Vector3(11, 11, 1);
         //image.GetComponent<SpriteRenderer>().sprite = drawingImage;
 
 
@@ -137,6 +162,11 @@ public class ObjectManager : MonoBehaviour
         ObjectManager.instance.drawingArea.SetActive(false);
         ObjectManager.instance.drawLineButton.SetActive(false);
         DrawingToJson.instance.imagePoints.Clear();
+        DrawingToJson.instance.indexOfMaxX = 0;
+        DrawingToJson.instance.indexOfMaxY = 0;
+        DrawingToJson.instance.indexOfMinX = 0;
+        DrawingToJson.instance.indexOfMinY = 0;
+        DrawingToJson.instance.canUpdateMinMax = true;
         StrokeManager.instance.clearAll();
         
         //  image.transform.position = new Vector3(image.transform.position.x, image.transform.position.y, 0);
@@ -168,12 +198,15 @@ public class ObjectManager : MonoBehaviour
 
             image.AddComponent<Rigidbody>();
             image.AddComponent<Object>();
-            image.name = type;
+            image.name = type+nbrOfSpawns;
             image.GetComponent<Object>().setClassName(type);
             image.GetComponent<Object>().setIndex(index);
             ObjectBehaviorManager.instance.behave(image.GetComponent<Object>());
         }
-        LineManager.instance.drawLine(false);
+        if (ObjectTypeHandler.instance.objects[image.GetComponent<Object>().index].objectCategories.drive)
+            LineManager.instance.drawLine(false,150) ;
+        else
+            LineManager.instance.drawLine(false, 30);
         nbrOfSpawns++;
        
         
