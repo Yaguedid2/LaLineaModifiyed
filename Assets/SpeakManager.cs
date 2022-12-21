@@ -9,6 +9,7 @@ public class SpeakManager : MonoBehaviour
     List<string> whatToSay = new List<string>();
     public static SpeakManager instance;
     public float timeBetweenWords = 1f;
+    public bool stop=false;
     public bool isPrinting = false;
     private void Awake()
     {
@@ -24,6 +25,12 @@ public class SpeakManager : MonoBehaviour
     {
         if (whatToSay.Count != 0 && !isPrinting)
             StartCoroutine(generateText());
+        if(stop)
+        {
+            stop = false;
+            StopAllCoroutines();
+            whatToSay.Clear();
+        }
     }
     bool splitPhrase = false;
     float persTimeBetweenWords;

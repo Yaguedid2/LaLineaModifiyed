@@ -20,8 +20,11 @@ public class AnimationPositionChanger : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         timeInSec += Time.deltaTime;
-        if (timeInSec>3 &&  player.transform.position.y < target.y)
+        if (timeInSec > 3 && player.transform.position.y < target.y)
+        {
             player.transform.position = Vector3.MoveTowards(player.transform.position, target, 0.2f);
+            
+        }
       
     }
 

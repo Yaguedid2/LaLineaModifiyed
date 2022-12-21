@@ -5,6 +5,9 @@ using UnityEngine;
 public class ObjectBehaviorManager : MonoBehaviour
 {
     public static ObjectBehaviorManager instance;
+    public GameObject blueLight, redLight;
+    public GameObject wheelCar, chairCar;
+    public GameObject smoke;
     Animator animator;
     private void Awake()
     {
@@ -13,6 +16,9 @@ public class ObjectBehaviorManager : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+       
+        // Confines the cursor
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     // Update is called once per frame
@@ -69,7 +75,7 @@ public class ObjectBehaviorManager : MonoBehaviour
              childLocation = "/" + nameOfParentObject + "/" + nameOfChildObject;
             GameObject leftCorner = GameObject.Find(childLocation);
             nameOfChildObject = "top";
-            childLocation = "/" + nameOfParentObject + "/" + nameOfChildObject;
+             childLocation = "/" + nameOfParentObject + "/" + nameOfChildObject;
             GameObject topCorner = GameObject.Find(childLocation);
 
             float disTopRight = Vector3.Distance(topCorner.transform.localPosition, rightCorner.transform.localPosition);
@@ -82,9 +88,25 @@ public class ObjectBehaviorManager : MonoBehaviour
                 objectToBeahveOn.transform.localScale = new Vector3(-11, 11, 1);
                 xToGoTo = rightCorner.transform.position.x;
             }
-           
-           
+            if (objectToBeahveOn.className != "car")
+            {
+                GameObject b = Instantiate(blueLight);
+                GameObject r = Instantiate(redLight);
+                b.transform.parent = objectToBeahveOn.transform;
+                r.transform.parent = objectToBeahveOn.transform;
+                b.transform.localPosition = topCorner.transform.localPosition;
+                r.transform.localPosition = topCorner.transform.localPosition - new Vector3(0.1f, 0, 0);
+                if(objectToBeahveOn.className== "firetruck" || objectToBeahveOn.className == "truck" || objectToBeahveOn.className == "train")
+                {
+                    b.GetComponent<Light>().color = new Color(11f/255f, 1f/255f, 0);
+                    r.GetComponent<Light>().color = new Color(255f/255f, 239f/255f, 0);
+                }
+               
+                b.GetComponent<Animator>().Play("play");
 
+                r.GetComponent<Animator>().Play("play");
+            }
+           
             StartCoroutine(drive(xToGoTo+3, objectToBeahveOn.gameObject));
         }
 
@@ -206,8 +228,9 @@ public class ObjectBehaviorManager : MonoBehaviour
            collider.isTrigger = true;
         animator.Play("enterCar");
         yield return new WaitForSeconds(5f);
+      chairCar.SetActive(true);
+       wheelCar.SetActive(true);
 
-       
         indexOfLine = 0;
         StartCoroutine(moveCar(objectToBehaveOn));
 
@@ -229,8 +252,19 @@ public class ObjectBehaviorManager : MonoBehaviour
         int counter = 0;
 
         float timeInSec = 0;
-        while(indexOfLine < LineManager.instance.line.positionCount - 4)
+        //generate Smoke
+     
+
+        while (indexOfLine < LineManager.instance.line.positionCount - 2)
         {
+            SpeakManager.instance.Speak("♪♪♪♪", false, 0);
+            SpeakManager.instance.Speak("♪♪♪", false, 0);
+            SpeakManager.instance.Speak("♪♪♪♪", false, 0);
+            SpeakManager.instance.Speak("♪♪", false, 0);
+            SpeakManager.instance.Speak("♪♪♪♪", false, 0);
+            smoke.GetComponent<ParticleFollow>().followObject(bottom.transform.position+new Vector3(1,1,0));
+            
+            
             if (timeInSec > timeForAnim)
             {
                 timeInSec = 0;
@@ -264,11 +298,15 @@ public class ObjectBehaviorManager : MonoBehaviour
             timeInSec += Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }
-       
+        chairCar.SetActive(false);
+        wheelCar.SetActive(false);
         transform.position =  LineManager.instance.lineTransform.TransformPoint(LineManager.instance.line.GetPosition(indexOfLine-1));
+        SpeakManager.instance.stop = true;
+        animator.Play("standIdle");
+        yield return new WaitForSeconds(2f);
         PlayerController.instance.indexOfLine = indexOfLine-1;
         PlayerController.instance.changeLinePosition(false);
-
+        smoke.GetComponent<ParticleFollow>().stop();
 
 
 

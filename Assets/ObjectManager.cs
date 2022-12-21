@@ -38,7 +38,7 @@ public class ObjectManager : MonoBehaviour
     public void instantiateObject(string type,int index)
     {
         listOfImagePointsToWalkOn.Clear();
-        AssetDatabase.Refresh();
+       
         GameObject image = new GameObject();
         image.name = "Object";
         drawingTransform = image.transform;
@@ -203,7 +203,7 @@ public class ObjectManager : MonoBehaviour
             image.GetComponent<Object>().setIndex(index);
             ObjectBehaviorManager.instance.behave(image.GetComponent<Object>());
         }
-        if (ObjectTypeHandler.instance.objects[image.GetComponent<Object>().index].objectCategories.drive)
+        if (!drawLine && ObjectTypeHandler.instance.objects[image.GetComponent<Object>().index].objectCategories.drive)
             LineManager.instance.drawLine(false,150) ;
         else
             LineManager.instance.drawLine(false, 30);
