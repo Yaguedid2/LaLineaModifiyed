@@ -1,0 +1,446 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class WheatherManager : MonoBehaviour
+{
+    float temperator;
+    public GameObject sun, wind, cloud, rain, snow;
+    List<GameObject> listOfAllSpawnedWheathers = new List<GameObject>();
+    public float timeForWheather = 10f;
+    public float timeBetweenChanges = 10f;
+
+    void Start()
+    {
+        StartCoroutine(root());
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    string wheather="sun",previousWheather;
+    string compangnienSun, previousCompagnienSun, compangnienRain, previousCompagnienRain, 
+        compangnienCloud, previousCompagnienCloud, compangnienSnow, previousCompagnienSnow, compangnienWind, previousCompagnienWind;
+    public IEnumerator root()
+    {
+       
+        //StopAllCoroutines();
+        destroyAllWeathers();
+        yield return new WaitForSeconds(timeBetweenChanges);
+        previousWheather =wheather;
+        previousCompagnienWind = compangnienWind;
+        previousCompagnienSun = compangnienSun;
+        previousCompagnienRain = compangnienRain;
+        previousCompagnienSnow = compangnienSnow;
+        previousCompagnienCloud = compangnienCloud;
+        wheather = selectWeather();
+       
+        switch (wheather)
+        {
+            case "wind":
+                StartCoroutine(generateWind(true));
+               
+                    int windAlone = Random.Range(1, 5);
+                    if (windAlone % 2 == 0)
+                    {
+
+                        int cloudOrSunOrSnoworRain = Random.Range(1, 100);
+                        if (cloudOrSunOrSnoworRain < 25)
+                        {
+                            compangnienWind = "sun";
+                            
+                           
+                        }
+
+                        else if (cloudOrSunOrSnoworRain < 50)
+                        {
+                            compangnienWind = "rain";
+                          
+                        }
+                        else if (cloudOrSunOrSnoworRain < 75)
+                        {
+                            compangnienWind = "cloud";
+                           
+                        }
+
+                        else
+                        {
+                            compangnienWind = "snow";
+                           
+                        }
+                    switch (compangnienWind)
+                    {
+                        case "sun": StartCoroutine(generateSun(false)); break;
+                        case "rain": StartCoroutine(generateRain(false)); break;
+                        case "cloud": StartCoroutine(generateCloud(false)); break;
+                        case "snow": StartCoroutine(generateSnow(false)); break;
+
+                    }
+                }
+                   
+               
+               
+
+
+
+                break;
+            case "sun":
+                StartCoroutine(generateSun(true));
+                int sunAlone = Random.Range(1, 5);
+               
+                    if (sunAlone % 2 == 0)
+                    {
+
+                        int cloudOrWindOrSnoworRain = Random.Range(1, 100);
+                        if (cloudOrWindOrSnoworRain < 25)
+                        {
+                            compangnienSun = "wind";
+                            
+                        }
+                        else if (cloudOrWindOrSnoworRain < 50)
+                        {
+                            compangnienSun = "cloud";
+                           
+                        }
+                        else if (cloudOrWindOrSnoworRain < 75)
+                        {
+                            compangnienSun = "snow";
+                           
+                        }
+                        else
+                        {
+                            compangnienSun = "rain";
+                            
+                        }
+
+                    switch (compangnienRain)
+                    {
+                        case "wind": StartCoroutine(generateWind(false)); break;
+                        case "cloud": StartCoroutine(generateCloud(false)); break;
+                        case "snow": StartCoroutine(generateSnow(false)); break;
+                        case "rain": StartCoroutine(generateRain(false)); break;
+
+                    }
+
+                }
+               
+               
+
+                break;
+            case "rain":
+               
+                StartCoroutine(generateCloud(false));
+                StartCoroutine(generateRain(true));
+
+                  int rainAlone = Random.Range(1, 5);
+                    if (rainAlone % 2 == 0)
+                    {
+
+                        int windOrSun = Random.Range(1, 100);
+                        if (windOrSun % 2 == 0)
+                        {
+                            compangnienRain = "sun";
+                            
+                        }
+                        else
+                        {
+                            compangnienRain = "wind";
+                            
+                        }
+                    switch (compangnienRain)
+                    {
+                        case "sun": StartCoroutine(generateSun(false)); break;
+                        case "wind": StartCoroutine(generateWind(false)); break;
+                    }
+                }
+               
+
+              
+              
+
+                break;
+            case "snow":
+                StartCoroutine(generateCloud(false));
+                StartCoroutine(generateSnow(true));
+              
+                    int snowAlone = Random.Range(1, 5);
+                    if (snowAlone % 2 == 0)
+                    {
+
+                        int WindOrSunorRain = Random.Range(1, 100);
+                        if (WindOrSunorRain < 35)
+                        {
+                            compangnienSnow = "sun";
+                           
+                        }
+
+                        else if (WindOrSunorRain < 70)
+                        {
+                            compangnienSnow = "rain";
+                            
+                        }
+                        else
+                        {
+                            compangnienSnow = "wind";
+                            
+                        }
+
+
+
+                    switch (compangnienSnow)
+                    {
+                        case "sun": StartCoroutine(generateSun(false)); break;
+                        case "rain": StartCoroutine(generateRain(false)); break;
+                        case "wind": StartCoroutine(generateWind(false)); break;
+                    }
+                }
+               
+
+               
+
+                break;
+            case "cloudy":
+                StartCoroutine(generateCloud(true));
+               
+                    int cloudAlone = Random.Range(1, 5);
+                    if (cloudAlone % 2 == 0)
+                    {
+
+                        int sunOrWindOrSnoworRain = Random.Range(1, 100);
+                        if (sunOrWindOrSnoworRain < 25)
+                        {
+                            compangnienCloud = "wind";
+                           
+                        }
+                        else if (sunOrWindOrSnoworRain < 50)
+                        {
+                            compangnienCloud = "sun";
+                            
+                        }
+                        else if (sunOrWindOrSnoworRain < 75)
+                        {
+                            compangnienCloud = "snow";
+                            StartCoroutine(generateSnow(false));
+                        }
+                        else
+                        {
+                            compangnienCloud = "rain";
+                            StartCoroutine(generateRain(false));
+                        }
+
+
+                    switch (compangnienCloud)
+                    {
+                        case "wind": StartCoroutine(generateWind(false)); break;
+                        case "sun": StartCoroutine(generateSun(false)); break;
+                        case "snow": StartCoroutine(generateSnow(false)); break;
+                        case "rain": StartCoroutine(generateRain(false)); break;
+
+                    }
+
+                }
+
+                
+                
+
+                break;
+        }
+     
+
+    }
+    string selectWeather()
+    {
+        int rand = Random.Range(0, 100);
+        if (rand<=20)
+        {
+            return "wind";
+            //windd
+        }
+        else if (rand > 20 && rand <40)
+        {
+            return "sun";
+            //sun
+        }else if(rand > 40 && rand < 60)
+        {
+            return "rain";
+            //rain
+        }else if (rand > 60 && rand < 80)
+        {
+            return "snow";
+            //snow
+        }else
+        {
+            return "cloudy";
+            //cloudy
+        }
+
+    }
+    IEnumerator generateWind(bool callRoot)
+    {
+       // GameObject windClone = Instantiate(wind);
+        //windClone.transform.parent = Camera.main.transform;
+        wind.transform.localPosition = new Vector3(-9.1f, -0.63f, 5.2f);
+        bool oneTime = true; 
+        
+        listOfAllSpawnedWheathers.Add(wind);
+        yield return new WaitForSeconds(timeForWheather);
+        int maxParticles = 1000;
+        sun.GetComponentInChildren<Light>().color = new Color(15f/255f, 147f/255f, 149f/255f);
+        for (int nbrOfParticles = 0; nbrOfParticles <= maxParticles; nbrOfParticles++)
+        {
+            foreach (ParticleSystem p in wind.GetComponentsInChildren<ParticleSystem>())
+            {
+                p.maxParticles = nbrOfParticles;
+            }
+            yield return new WaitForSeconds(0.001f);
+            if(oneTime)
+            {
+                oneTime = false;
+                wind.GetComponent<ParticleSystem>().Play();
+            }
+           
+        }
+        if (callRoot)
+        {
+            int probForClouds = Random.Range(0, 10);
+            if (probForClouds <= 7)
+                StartCoroutine(generateCloud(true));
+            else 
+                StartCoroutine(root());
+        }
+       
+
+    }
+    IEnumerator generateSun(bool callRoot)
+    {
+        //GameObject sunClone = Instantiate(sun);
+        //sunClone.transform.parent = Camera.main.transform;
+        sun.GetComponent<ParticleSystem>().Play();
+        //-8f
+        sun.transform.localPosition = new Vector3(-13f, 4.91f, 3.1f);
+        sun.GetComponentInChildren<Light>().color = new Color(255f / 255f, 245f / 255f, 0f / 255f);
+        listOfAllSpawnedWheathers.Add(sun);
+       while(sun.transform.localPosition.x<-8)
+        {
+            sun.transform.localPosition = Vector3.MoveTowards(sun.transform.localPosition, new Vector3(-8f, 4.91f, 3.1f), 0.2f);
+            yield return new WaitForEndOfFrame();
+        }
+
+       
+            
+        
+        yield return new WaitForSeconds(timeForWheather);
+        if (callRoot)
+            StartCoroutine(root());
+    }
+    IEnumerator generateSnow(bool callRoot)
+    {
+        //GameObject snowClone = Instantiate(snow);
+        //snowClone.transform.parent = Camera.main.transform;
+        bool oneTime = true;
+        snow.transform.localPosition = new Vector3(0, 4.8f, 7.2f);
+        sun.GetComponentInChildren<Light>().color = new Color(15f / 255f, 147f / 255f, 149f / 255f);
+        listOfAllSpawnedWheathers.Add(snow);
+        int maxParticles = 1000;
+
+        for (int nbrOfParticles = 0; nbrOfParticles <= maxParticles; nbrOfParticles++)
+        {
+            foreach (ParticleSystem p in snow.GetComponentsInChildren<ParticleSystem>())
+            {
+                p.maxParticles = nbrOfParticles;
+            }
+            if (oneTime)
+            {
+                oneTime = false;
+                snow.GetComponent<ParticleSystem>().Play();
+            }
+            yield return new WaitForSeconds(0.001f);
+        }
+        yield return new WaitForSeconds(timeForWheather);
+        if (callRoot)
+            StartCoroutine(root());
+    }
+    IEnumerator generateCloud(bool callRoot)
+    {
+        //GameObject cloudClone = Instantiate(cloud);
+        //cloudClone.transform.parent = Camera.main.transform;
+        cloud.transform.localPosition = new Vector3(-2.4f, 4.8f, 3.1f);
+        bool oneTime = true;
+        sun.GetComponentInChildren<Light>().color = new Color(15f / 255f, 147f / 255f, 149f / 255f);
+        listOfAllSpawnedWheathers.Add(cloud);
+        int maxParticles = 500;
+       
+        for(int nbrOfParticles=0;nbrOfParticles<=maxParticles;nbrOfParticles++)
+        {
+            foreach (ParticleSystem p in cloud.GetComponentsInChildren<ParticleSystem>())
+            {
+                p.maxParticles = nbrOfParticles;
+            }
+            if (oneTime)
+            {
+                cloud.GetComponent<ParticleSystem>().Play();
+                oneTime = false;
+            }
+            yield return new WaitForSeconds(0.001f);
+        }
+        
+
+        yield return new WaitForSeconds(timeForWheather);
+        if(callRoot)
+        {
+            int probForRainOrSnow = Random.Range(0, 10);
+            if (probForRainOrSnow <= 7 && previousWheather!= "snow" && previousWheather != "rain")
+            {
+                int rainOrSnow = Random.Range(0, 11);
+                if (rainOrSnow % 2 == 0)
+                    StartCoroutine(generateRain(true));
+                else
+                    StartCoroutine(generateSnow(true));
+            }
+            else 
+                StartCoroutine(root());
+        }
+        
+    }
+    IEnumerator generateRain(bool callRoot)
+    {
+        //GameObject rainClone = Instantiate(rain);
+        //rainClone.transform.parent = Camera.main.transform;
+        rain.transform.localPosition = new Vector3(0, -5.11f, 3.1f);
+        sun.GetComponentInChildren<Light>().color = new Color(15f / 255f, 147f / 255f, 149f / 255f);
+        bool oneTime = true;
+        listOfAllSpawnedWheathers.Add(rain);
+        int maxParticles = 1000;
+
+        for (int nbrOfParticles = 0; nbrOfParticles <= maxParticles; nbrOfParticles++)
+        {
+            foreach (ParticleSystem p in rain.GetComponentsInChildren<ParticleSystem>())
+            {
+                p.maxParticles = nbrOfParticles;
+            }
+            if (oneTime)
+            {
+                oneTime = false;
+                rain.GetComponent<ParticleSystem>().Play();
+            }
+            yield return new WaitForSeconds(0.001f);
+        }
+        yield return new WaitForSeconds(timeForWheather);
+        if (callRoot)
+            StartCoroutine(root());
+    }
+    void destroyAllWeathers()
+    {
+        //animate
+        //
+        foreach (GameObject w in listOfAllSpawnedWheathers)
+        {
+            w.GetComponent<ParticleSystem>().Stop();
+           
+        }
+         
+        listOfAllSpawnedWheathers.Clear();
+    }
+}
