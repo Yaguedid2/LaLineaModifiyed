@@ -36,4 +36,11 @@ public class GameManager : MonoBehaviour
            
         }
     }
+    public void pauseUnpauseGame(bool pause)
+    {
+        if (pause)
+            Time.timeScale = 0;
+        else
+            Time.timeScale = 1;
+    }
 }

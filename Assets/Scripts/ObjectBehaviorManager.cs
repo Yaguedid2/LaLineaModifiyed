@@ -20,7 +20,7 @@ public class ObjectBehaviorManager : MonoBehaviour
 
         // Confines the cursor
 
-        Cursor.lockState = CursorLockMode.Locked;
+       // Cursor.lockState = CursorLockMode.Locked;
     }
     GameObject objectToBehaveOn;
 

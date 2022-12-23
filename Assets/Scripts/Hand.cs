@@ -33,8 +33,8 @@ public class Hand : MonoBehaviour
     }
     public void showHand(bool showOrNot)
     {
-        if(showOrNot)
-        Cursor.lockState = CursorLockMode.None;
+        //if(showOrNot)
+        //Cursor.lockState = CursorLockMode.None;
         
          
         gameObject.SetActive(showOrNot);

@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class WheatherManager : MonoBehaviour
 {
-    float temperator;
+    float temperator=23,momentumTemperator;
+    public TextMeshProUGUI tempText;
+    public Image headTempor, bottomTempor;
     public GameObject sun, wind, cloud, rain, snow;
     List<GameObject> listOfAllSpawnedWheathers = new List<GameObject>();
     public float timeForWheather = 10f;
@@ -18,9 +22,9 @@ public class WheatherManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        tempoCounter();
     }
-    string wheather="sun",previousWheather;
+    string wheather="",previousWheather;
     string compangnienSun, previousCompagnienSun, compangnienRain, previousCompagnienRain, 
         compangnienCloud, previousCompagnienCloud, compangnienSnow, previousCompagnienSnow, compangnienWind, previousCompagnienWind;
     public IEnumerator root()
@@ -40,9 +44,9 @@ public class WheatherManager : MonoBehaviour
         switch (wheather)
         {
             case "wind":
-                StartCoroutine(generateWind(true));
+                StartCoroutine(generateWind(true,true));
                
-                    int windAlone = Random.Range(1, 5);
+                int windAlone = Random.Range(1, 5);
                     if (windAlone % 2 == 0)
                     {
 
@@ -72,10 +76,10 @@ public class WheatherManager : MonoBehaviour
                         }
                     switch (compangnienWind)
                     {
-                        case "sun": StartCoroutine(generateSun(false)); break;
-                        case "rain": StartCoroutine(generateRain(false)); break;
-                        case "cloud": StartCoroutine(generateCloud(false)); break;
-                        case "snow": StartCoroutine(generateSnow(false)); break;
+                        case "sun": StartCoroutine(generateSun(false,true)); break;
+                        case "rain": StartCoroutine(generateRain(false,true)); break;
+                        case "cloud": StartCoroutine(generateCloud(false,true)); break;
+                        case "snow": StartCoroutine(generateSnow(false,true)); break;
 
                     }
                 }
@@ -87,7 +91,8 @@ public class WheatherManager : MonoBehaviour
 
                 break;
             case "sun":
-                StartCoroutine(generateSun(true));
+                StartCoroutine(generateSun(true,true));
+              
                 int sunAlone = Random.Range(1, 5);
                
                     if (sunAlone % 2 == 0)
@@ -117,10 +122,10 @@ public class WheatherManager : MonoBehaviour
 
                     switch (compangnienRain)
                     {
-                        case "wind": StartCoroutine(generateWind(false)); break;
-                        case "cloud": StartCoroutine(generateCloud(false)); break;
-                        case "snow": StartCoroutine(generateSnow(false)); break;
-                        case "rain": StartCoroutine(generateRain(false)); break;
+                        case "wind": StartCoroutine(generateWind(false,true)); break;
+                        case "cloud": StartCoroutine(generateCloud(false,true)); break;
+                        case "snow": StartCoroutine(generateSnow(false,true)); break;
+                        case "rain": StartCoroutine(generateRain(false,true)); break;
 
                     }
 
@@ -131,10 +136,10 @@ public class WheatherManager : MonoBehaviour
                 break;
             case "rain":
                
-                StartCoroutine(generateCloud(false));
-                StartCoroutine(generateRain(true));
-
-                  int rainAlone = Random.Range(1, 5);
+                StartCoroutine(generateCloud(false,false));
+                StartCoroutine(generateRain(true,true));
+                
+                int rainAlone = Random.Range(1, 5);
                     if (rainAlone % 2 == 0)
                     {
 
@@ -151,8 +156,8 @@ public class WheatherManager : MonoBehaviour
                         }
                     switch (compangnienRain)
                     {
-                        case "sun": StartCoroutine(generateSun(false)); break;
-                        case "wind": StartCoroutine(generateWind(false)); break;
+                        case "sun": StartCoroutine(generateSun(false,true)); break;
+                        case "wind": StartCoroutine(generateWind(false,true)); break;
                     }
                 }
                
@@ -162,10 +167,10 @@ public class WheatherManager : MonoBehaviour
 
                 break;
             case "snow":
-                StartCoroutine(generateCloud(false));
-                StartCoroutine(generateSnow(true));
-              
-                    int snowAlone = Random.Range(1, 5);
+                StartCoroutine(generateCloud(false,false));
+                StartCoroutine(generateSnow(true,true));
+               
+                int snowAlone = Random.Range(1, 5);
                     if (snowAlone % 2 == 0)
                     {
 
@@ -191,9 +196,9 @@ public class WheatherManager : MonoBehaviour
 
                     switch (compangnienSnow)
                     {
-                        case "sun": StartCoroutine(generateSun(false)); break;
-                        case "rain": StartCoroutine(generateRain(false)); break;
-                        case "wind": StartCoroutine(generateWind(false)); break;
+                        case "sun": StartCoroutine(generateSun(false,false)) ; break;
+                        case "rain": StartCoroutine(generateRain(false,false)); break;
+                        case "wind": StartCoroutine(generateWind(false,false)); break;
                     }
                 }
                
@@ -202,9 +207,9 @@ public class WheatherManager : MonoBehaviour
 
                 break;
             case "cloudy":
-                StartCoroutine(generateCloud(true));
+                StartCoroutine(generateCloud(true,true));
                
-                    int cloudAlone = Random.Range(1, 5);
+                int cloudAlone = Random.Range(1, 5);
                     if (cloudAlone % 2 == 0)
                     {
 
@@ -222,21 +227,21 @@ public class WheatherManager : MonoBehaviour
                         else if (sunOrWindOrSnoworRain < 75)
                         {
                             compangnienCloud = "snow";
-                            StartCoroutine(generateSnow(false));
+                            
                         }
                         else
                         {
                             compangnienCloud = "rain";
-                            StartCoroutine(generateRain(false));
+                           
                         }
 
 
                     switch (compangnienCloud)
                     {
-                        case "wind": StartCoroutine(generateWind(false)); break;
-                        case "sun": StartCoroutine(generateSun(false)); break;
-                        case "snow": StartCoroutine(generateSnow(false)); break;
-                        case "rain": StartCoroutine(generateRain(false)); break;
+                        case "wind": StartCoroutine(generateWind(false,true)); break;
+                        case "sun": StartCoroutine(generateSun(false,true)); break;
+                        case "snow": StartCoroutine(generateSnow(false,true)); break;
+                        case "rain": StartCoroutine(generateRain(false,true)); break;
 
                     }
 
@@ -277,10 +282,15 @@ public class WheatherManager : MonoBehaviour
         }
 
     }
-    IEnumerator generateWind(bool callRoot)
+    IEnumerator generateWind(bool callRoot,bool allowChangeTemp)
     {
-       // GameObject windClone = Instantiate(wind);
+        // GameObject windClone = Instantiate(wind);
         //windClone.transform.parent = Camera.main.transform;
+        if (allowChangeTemp)
+        {
+            momentumTemperator = Random.Range(10, 20);
+            stepTemp = 0.00001f;
+        }
         wind.transform.localPosition = new Vector3(-9.1f, -0.63f, 5.2f);
         bool oneTime = true; 
         
@@ -306,17 +316,23 @@ public class WheatherManager : MonoBehaviour
         {
             int probForClouds = Random.Range(0, 10);
             if (probForClouds <= 7)
-                StartCoroutine(generateCloud(true));
+                StartCoroutine(generateCloud(true,true));
             else 
                 StartCoroutine(root());
         }
        
 
     }
-    IEnumerator generateSun(bool callRoot)
+    IEnumerator generateSun(bool callRoot, bool allowChangeTemp)
     {
         //GameObject sunClone = Instantiate(sun);
         //sunClone.transform.parent = Camera.main.transform;
+        if(allowChangeTemp)
+        {
+            momentumTemperator = Random.Range(15, 36);
+            stepTemp = 0.00001f;
+        }
+       
         sun.GetComponent<ParticleSystem>().Play();
         //-8f
         sun.transform.localPosition = new Vector3(-13f, 4.91f, 3.1f);
@@ -324,7 +340,7 @@ public class WheatherManager : MonoBehaviour
         listOfAllSpawnedWheathers.Add(sun);
        while(sun.transform.localPosition.x<-8)
         {
-            sun.transform.localPosition = Vector3.MoveTowards(sun.transform.localPosition, new Vector3(-8f, 4.91f, 3.1f), 0.2f);
+            sun.transform.localPosition = Vector3.MoveTowards(sun.transform.localPosition, new Vector3(-8f, 4.91f, 3.1f), 0.02f);
             yield return new WaitForEndOfFrame();
         }
 
@@ -332,15 +348,28 @@ public class WheatherManager : MonoBehaviour
             
         
         yield return new WaitForSeconds(timeForWheather);
+        while (sun.transform.localPosition.x > -13)
+        {
+            sun.transform.localPosition = Vector3.MoveTowards(sun.transform.localPosition, new Vector3(-13f, 4.91f, 3.1f), 0.02f);
+            yield return new WaitForEndOfFrame();
+        }
         if (callRoot)
             StartCoroutine(root());
+        
+
     }
-    IEnumerator generateSnow(bool callRoot)
+    IEnumerator generateSnow(bool callRoot, bool allowChangeTemp)
     {
         //GameObject snowClone = Instantiate(snow);
         //snowClone.transform.parent = Camera.main.transform;
         bool oneTime = true;
+
         snow.transform.localPosition = new Vector3(0, 4.8f, 7.2f);
+        if (allowChangeTemp)
+        {
+            momentumTemperator = Random.Range(-20, 2);
+            stepTemp = 0.00001f;
+        }
         sun.GetComponentInChildren<Light>().color = new Color(15f / 255f, 147f / 255f, 149f / 255f);
         listOfAllSpawnedWheathers.Add(snow);
         int maxParticles = 1000;
@@ -362,10 +391,15 @@ public class WheatherManager : MonoBehaviour
         if (callRoot)
             StartCoroutine(root());
     }
-    IEnumerator generateCloud(bool callRoot)
+    IEnumerator generateCloud(bool callRoot, bool allowChangeTemp)
     {
         //GameObject cloudClone = Instantiate(cloud);
         //cloudClone.transform.parent = Camera.main.transform;
+        if (allowChangeTemp)
+        {
+            momentumTemperator = Random.Range(10, 27);
+            stepTemp = 0.00001f;
+        }
         cloud.transform.localPosition = new Vector3(-2.4f, 4.8f, 3.1f);
         bool oneTime = true;
         sun.GetComponentInChildren<Light>().color = new Color(15f / 255f, 147f / 255f, 149f / 255f);
@@ -395,19 +429,24 @@ public class WheatherManager : MonoBehaviour
             {
                 int rainOrSnow = Random.Range(0, 11);
                 if (rainOrSnow % 2 == 0)
-                    StartCoroutine(generateRain(true));
+                    StartCoroutine(generateRain(true,true));
                 else
-                    StartCoroutine(generateSnow(true));
+                    StartCoroutine(generateSnow(true,true));
             }
             else 
                 StartCoroutine(root());
         }
         
     }
-    IEnumerator generateRain(bool callRoot)
+    IEnumerator generateRain(bool callRoot, bool allowChangeTemp)
     {
         //GameObject rainClone = Instantiate(rain);
         //rainClone.transform.parent = Camera.main.transform;
+        if (allowChangeTemp)
+        {
+            momentumTemperator = Random.Range(0, 27);
+            stepTemp = 0.00001f;
+        }
         rain.transform.localPosition = new Vector3(0, -5.11f, 3.1f);
         sun.GetComponentInChildren<Light>().color = new Color(15f / 255f, 147f / 255f, 149f / 255f);
         bool oneTime = true;
@@ -442,5 +481,28 @@ public class WheatherManager : MonoBehaviour
         }
          
         listOfAllSpawnedWheathers.Clear();
+    }
+    float stepTemp = 0.00001f;
+    void tempoCounter()
+    {
+        if (stepTemp < 1 && wheather!="")
+        {
+            temperator = temperator * (1 - stepTemp) + momentumTemperator * stepTemp;
+            stepTemp += 0.00001f;
+            if (temperator >= 0)
+            {
+                bottomTempor.color = new Color(255 / 255f, 6 / 255f, 6 / 255f);
+                headTempor.fillAmount = temperator / 40;
+            }
+
+            else
+            {
+                headTempor.fillAmount = 0;
+                bottomTempor.color = new Color(94 / 255f, 67 / 255f, 176 / 255f);
+            }
+            tempText.text = Mathf.FloorToInt(temperator).ToString() + " C°";
+        }
+       
+        
     }
 }
