@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class PlayerController : MonoBehaviour
     public static PlayerController instance;
     public GameObject whereToSee;
     public bool fall = false;
-   
+    public Cloth flag;
     CapsuleCollider playerCollider;
     public BoxCollider fallingFromLineCollider;
     public LayerMask layerMask;
@@ -29,10 +30,18 @@ public class PlayerController : MonoBehaviour
     Vector3 offsetBetweenBodyAndHead;
     void Start()
     {
+        if(DontDestroy.playerPosition !=Vector3.zero)
+        {
+            transform.position = DontDestroy.playerPosition;
+            transform.rotation = DontDestroy.playerRotation;
+        }
+
+        StartCoroutine(resetClothes());
         SpeakManager.instance.Speak("Oh Shit ", false,2);
         SpeakManager.instance.Speak("Here We Go ", false,2);
         SpeakManager.instance.Speak("Again ", false,2);
         oneTime = true;
+
        
 
     }
@@ -57,7 +66,7 @@ public class PlayerController : MonoBehaviour
         if (oneTime && GameManager.instance.GameLoaded)
         {
             oneTime = false;
-            firstStep();
+            StartCoroutine(firstWalk());
         }
         else if(!GameManager.instance.GameLoaded)
             return;
@@ -219,6 +228,13 @@ public class PlayerController : MonoBehaviour
         return angle;
        
     }
+    IEnumerator firstWalk()
+    {
+        if(DontDestroy.playerPosition!=Vector3.zero)
+        yield return new WaitForSeconds(3f);
+        firstStep();
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -231,16 +247,39 @@ public class PlayerController : MonoBehaviour
 
 
         }
+        if(other.tag=="Question")
+        {
+
+
+            other.GetComponent<BoxCollider>().enabled = false;
+          
+            DontDestroy.linePositions = LineManager.instance.listOfLinePositions.ToArray();
+            DontDestroy.indexOfline = indexOfLine;
+            DontDestroy.playerPosition = transform.position;
+            DontDestroy.playerRotation = transform.rotation;
+           
+          
+
+            SceneManager.LoadScene("miniGame", LoadSceneMode.Single);
+        }
 
 
     }
 
-
+    IEnumerator resetClothes()
+    {
+        flag.gameObject.SetActive(false);
+        yield return new WaitForSeconds(0.03f);
+        flag.gameObject.SetActive(true);
+    }
 
 
     public void changeLinePosition(bool firstTime)
     {
-
+        ///hna
+        if (DontDestroy.indexOfline != -1)
+            indexOfLine = DontDestroy.indexOfline;
+        else
         indexOfLine = 0;
         indexOfCorrLine = 0;
         indexOfpointOnDrawing = 0;

@@ -13,6 +13,7 @@ public class LineManager : MonoBehaviour
     public Vector3 start,end;
     float distanceBetweenLinePoints = 10;
     public List<Vector3> listOfLineEnds = new List<Vector3>();
+    public List<Vector3> listOfLinePositions = new List<Vector3>();
    
     private void Awake()
     {
@@ -31,9 +32,24 @@ public class LineManager : MonoBehaviour
         
         if (firstTime)
         {
+            Debug.Log("hey");
            GameObject l= Instantiate(lineObject);
             lineTransform = l.transform;
             line = l.GetComponent<LineRenderer>();
+            if (DontDestroy.linePositions!=null)
+            {
+                line.SetPosition(0, DontDestroy.linePositions[0]);
+                line.SetPosition(1, DontDestroy.linePositions[1]);
+               line.SetPosition(2, DontDestroy.linePositions[2]);
+                line.SetPosition(3, DontDestroy.linePositions[3]);
+               
+             
+            }
+            listOfLinePositions.Clear();
+            for (int p = 0; p < 4; p++)
+                listOfLinePositions.Add(line.GetPosition(p));
+            l.GetComponent<LineRendererSmoother>()._Smooth();
+            
             //  Mesh mesh = new Mesh();
             // l.GetComponent<LineRenderer>().BakeMesh(mesh);
             //l.GetComponent<MeshCollider>().sharedMesh = mesh;
@@ -65,9 +81,15 @@ public class LineManager : MonoBehaviour
             l.GetComponent<LineRenderer>().SetPosition(1, start-new Vector3(distance/3, 0, y));
             l.GetComponent<LineRenderer>().SetPosition(2, start - new Vector3(distance/2, 0, y));
             l.GetComponent<LineRenderer>().SetPosition(3, start - new Vector3(distance, 0, y));
-
-           
             line = l.GetComponent<LineRenderer>();
+            listOfLinePositions.Clear();
+            for (int p = 0; p < 4; p++)
+                listOfLinePositions.Add(line.GetPosition(p));
+
+            
+            l.GetComponent<LineRendererSmoother>()._Smooth();
+            
+            GameManager.instance.spawnQuestion();
             if(ObjectManager.instance.drawLine)
             {
                 PlayerController.instance.changeLinePosition(false);

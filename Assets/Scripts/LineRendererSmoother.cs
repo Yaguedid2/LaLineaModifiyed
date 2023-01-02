@@ -15,32 +15,20 @@ public class LineRendererSmoother : MonoBehaviour
 
     private void Start()
     {
+       
+    }
+   public void _Smooth()
+    {
         Line = GetComponent<LineRenderer>();
         int nbr = GetComponent<LineRenderer>().positionCount;
         List<Vector3> pos = new List<Vector3>();
-        for(int i=0;i<nbr;i++)
+        for (int i = 0; i < nbr; i++)
         {
             pos.Add(GetComponent<LineRenderer>().GetPosition(i));
         }
         InitialState = pos.ToArray();
-       
+
         Smooth();
-    }
-    private void OnGUI()
-    {
-        /*
-        if (GUI.Button(new Rect(10, 10, 300, 40), "Smooth Line"))
-        {
-            Smooth();
-        }
-        if (GUI.Button(new Rect(10, 60, 300, 40), "Generate Collider"))
-        {
-            GenerateMeshCollider();
-        }
-        if (GUI.Button(new Rect(10, 110, 300, 40), "Simplify Mesh"))
-        {
-            Line.Simplify(0.1f);
-        }*/
     }
 
     public void GenerateMeshCollider()

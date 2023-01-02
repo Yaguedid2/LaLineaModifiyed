@@ -45,7 +45,7 @@ public class SpeakManager : MonoBehaviour
     IEnumerator generateText( )
     {
         isPrinting = true;
-        Debug.Log("hey");
+
         float _timeBetweenWords;
         if (persTimeBetweenWords == 0)
             _timeBetweenWords = timeBetweenWords;

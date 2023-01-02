@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/primal.unity
     guid: 83eb54fd7ee32434f93934635563c728
+  - enabled: 1
+    path: Assets/Scenes/miniGame.unity
+    guid: 0ead74c55899d7f4584e75e6d4e381ba
   m_configObjects: {}

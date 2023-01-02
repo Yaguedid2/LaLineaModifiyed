@@ -29,7 +29,7 @@ public class WheatherManager : MonoBehaviour
         compangnienCloud, previousCompagnienCloud, compangnienSnow, previousCompagnienSnow, compangnienWind, previousCompagnienWind;
     public IEnumerator root()
     {
-       
+        PlayerController.instance.GetComponentInChildren<Cloth>().worldAccelerationScale = -0.5f;
         //StopAllCoroutines();
         destroyAllWeathers();
         yield return new WaitForSeconds(timeBetweenChanges);
@@ -295,7 +295,7 @@ public class WheatherManager : MonoBehaviour
         bool oneTime = true; 
         
         listOfAllSpawnedWheathers.Add(wind);
-        yield return new WaitForSeconds(timeForWheather);
+       
         int maxParticles = 1000;
         sun.GetComponentInChildren<Light>().color = new Color(15f/255f, 147f/255f, 149f/255f);
         for (int nbrOfParticles = 0; nbrOfParticles <= maxParticles; nbrOfParticles++)
@@ -312,6 +312,8 @@ public class WheatherManager : MonoBehaviour
             }
            
         }
+       // PlayerController.instance.GetComponentInChildren<Cloth>().worldAccelerationScale = -5;
+        yield return new WaitForSeconds(timeForWheather);
         if (callRoot)
         {
             int probForClouds = Random.Range(0, 10);

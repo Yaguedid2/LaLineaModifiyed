@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public bool GameLoaded = false;
     public GameObject LoadingPanel;
+    public GameObject question;
    
     private void Awake()
     {
@@ -42,5 +43,18 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0;
         else
             Time.timeScale = 1;
+    }
+    public void spawnQuestion()
+    {
+        //if not dowingSomethingSpecial
+
+        int rand = Random.Range(1, 10);
+        if(rand>6)
+        {
+            Vector3 questionPos = LineManager.instance.lineTransform.TransformPoint(LineManager.instance.line.GetPosition(Random.Range(5, 20)));
+            GameObject questionClone = Instantiate(question);
+            questionClone.transform.position = questionPos;
+
+        }
     }
 }

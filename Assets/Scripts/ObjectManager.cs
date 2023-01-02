@@ -183,7 +183,10 @@ public class ObjectManager : MonoBehaviour
 
             LineRenderer corr = Instantiate(correspandence);
             corrLine = corr;
-            Vector3 e = corr.gameObject.transform.InverseTransformPoint(rightCorner.transform.position);
+           
+          
+            Vector3 _e = instance.drawingTransform.TransformPoint(rightCorner.transform.localPosition);
+            Vector3 e = LineManager.instance.lineTransform.InverseTransformPoint(_e);
 
             Vector3 s = LineManager.instance.listOfLineEnds[LineManager.instance.listOfLineEnds.Count - 1];
 
@@ -191,9 +194,9 @@ public class ObjectManager : MonoBehaviour
             corr.SetPosition(1, new Vector3(s.x, s.y, s.z));
             corr.SetPosition(2, new Vector3(s.x , s.y, s.z));
             corr.SetPosition(3, new Vector3(e.x, e.y, e.z));
-            
+            corr.GetComponent<LineRendererSmoother>()._Smooth();
             //corr.gameObject.GetComponent<MeshCollider>().convex = true;
-            
+
             // Destroy(corr, 7);
             LineManager.instance.start = leftCorner.transform.localPosition;
             image.name = "line";
