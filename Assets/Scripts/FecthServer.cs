@@ -13,7 +13,7 @@ public class FecthServer : MonoBehaviour
     public GameObject choiceButton;
     public static FecthServer instance;
     public GameObject choiceButtonPanel;
-    public static string ip = "192.168.11.102";
+    public static string ip = "192.168.11.105";
     public Sprite closeImageSprite;
    
     private void Awake()

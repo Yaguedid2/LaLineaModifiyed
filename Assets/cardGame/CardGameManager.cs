@@ -143,10 +143,10 @@ public class CardGameManager : MonoBehaviour
             StartCoroutine(showscorePanel());
 
     }
-    bool scorePanelShown = false;
+    bool scorePanelShown = true;
     IEnumerator showscorePanel()
     {
-        scorePanelShown = true;
+        scorePanelShown = false;
         int note=0;
         int notefinal;
         for(int i=1;i<listOftimeRecords.Count;i++)
